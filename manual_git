@@ -1,0 +1,16 @@
+Comandos basicos:
+    - Copia o repositorio do grupo:
+        ~ $ git clone https://github.com/mftb/grupo05.git
+    
+    - Para atualizar seu repositorio local:
+        $ git pull
+
+    - Para dar commit no repositorio (local):
+        $ git add .
+        $ git commit -m "<mensagem>"
+      
+      onde <mensagem> eh a descricao das alteracoes commitadas
+    
+    - Para dar push no repositorio (remoto):
+        $ git push origin master
+
