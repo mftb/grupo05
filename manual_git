@@ -1,3 +1,6 @@
+Tutorial de como dar fork no repositorio para comecar a contribuir:
+https://help.github.com/articles/fork-a-repo/
+
 Comandos basicos:
     - Copia o repositorio do grupo:
         ~ $ git clone https://github.com/mftb/grupo05.git
