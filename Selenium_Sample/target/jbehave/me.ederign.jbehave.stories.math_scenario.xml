@@ -1,0 +1,12 @@
+<story path="me/ederign/jbehave/stories/math_scenario.story" title="">
+<scenario keyword="Scenario:" title="2 squared">
+<step outcome="successful">Given a variable x with value <parameter>2</parameter></step>
+<step outcome="successful">When I multiply x by <parameter>2</parameter></step>
+<step outcome="successful">Then x should equal <parameter>4</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="3 squared">
+<step outcome="successful">Given a variable x with value <parameter>3</parameter></step>
+<step outcome="successful">When I multiply x by <parameter>3</parameter></step>
+<step outcome="successful">Then x should equal <parameter>9</parameter></step>
+</scenario>
+</story>
