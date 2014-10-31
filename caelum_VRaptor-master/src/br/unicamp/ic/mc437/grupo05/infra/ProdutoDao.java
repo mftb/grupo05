@@ -1,4 +1,4 @@
-package br.com.caelum.goodbuy.infra;
+package br.unicamp.ic.mc437.grupo05.infra;
 
 import java.util.List;
 
@@ -8,8 +8,8 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.MatchMode;
 import org.hibernate.criterion.Restrictions;
 
-import br.com.caelum.goodbuy.modelo.Produto;
 import br.com.caelum.vraptor.ioc.Component;
+import br.unicamp.ic.mc437.grupo05.modelo.Produto;
 
 @Component
 public class ProdutoDao {

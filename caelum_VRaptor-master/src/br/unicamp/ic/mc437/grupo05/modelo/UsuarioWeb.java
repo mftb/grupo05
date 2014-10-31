@@ -1,4 +1,4 @@
-package br.com.caelum.goodbuy.modelo;
+package br.unicamp.ic.mc437.grupo05.modelo;
 
 import br.com.caelum.vraptor.ioc.Component;
 import br.com.caelum.vraptor.ioc.SessionScoped;

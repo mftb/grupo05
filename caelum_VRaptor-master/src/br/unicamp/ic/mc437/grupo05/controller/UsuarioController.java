@@ -1,8 +1,5 @@
-package br.com.caelum.goodbuy.controller;
+package br.unicamp.ic.mc437.grupo05.controller;
 
-import br.com.caelum.goodbuy.infra.UsuarioDao;
-import br.com.caelum.goodbuy.modelo.Usuario;
-import br.com.caelum.goodbuy.modelo.UsuarioWeb;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
@@ -10,6 +7,9 @@ import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.validator.ValidationMessage;
+import br.unicamp.ic.mc437.grupo05.infra.UsuarioDao;
+import br.unicamp.ic.mc437.grupo05.modelo.Usuario;
+import br.unicamp.ic.mc437.grupo05.modelo.UsuarioWeb;
 
 @Resource
 public class UsuarioController {

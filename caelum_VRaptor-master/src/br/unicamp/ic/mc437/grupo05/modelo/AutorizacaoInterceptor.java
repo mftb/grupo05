@@ -1,12 +1,12 @@
-package br.com.caelum.goodbuy.modelo;
+package br.unicamp.ic.mc437.grupo05.modelo;
 
-import br.com.caelum.goodbuy.controller.UsuarioController;
 import br.com.caelum.vraptor.InterceptionException;
 import br.com.caelum.vraptor.Intercepts;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.core.InterceptorStack;
 import br.com.caelum.vraptor.interceptor.Interceptor;
 import br.com.caelum.vraptor.resource.ResourceMethod;
+import br.unicamp.ic.mc437.grupo05.controller.UsuarioController;
 
 @Intercepts
 public class AutorizacaoInterceptor implements Interceptor{

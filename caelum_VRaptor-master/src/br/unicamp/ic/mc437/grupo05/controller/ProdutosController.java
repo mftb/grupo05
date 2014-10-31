@@ -1,10 +1,7 @@
-package br.com.caelum.goodbuy.controller;
+package br.unicamp.ic.mc437.grupo05.controller;
 
 import java.util.List;
 
-import br.com.caelum.goodbuy.infra.ProdutoDao;
-import br.com.caelum.goodbuy.modelo.Produto;
-import br.com.caelum.goodbuy.modelo.Restrito;
 import br.com.caelum.vraptor.Delete;
 import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Post;
@@ -13,6 +10,9 @@ import br.com.caelum.vraptor.Resource;
 import br.com.caelum.vraptor.Result;
 import br.com.caelum.vraptor.Validator;
 import br.com.caelum.vraptor.view.Results;
+import br.unicamp.ic.mc437.grupo05.infra.ProdutoDao;
+import br.unicamp.ic.mc437.grupo05.modelo.Produto;
+import br.unicamp.ic.mc437.grupo05.modelo.Restrito;
 
 @Resource
 public class ProdutosController {

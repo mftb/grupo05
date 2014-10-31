@@ -1,4 +1,4 @@
-package br.com.caelum.goodbuy.infra;
+package br.unicamp.ic.mc437.grupo05.infra;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;

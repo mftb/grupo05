@@ -1,4 +1,4 @@
-package br.com.caelum.goodbuy.modelo;
+package br.unicamp.ic.mc437.grupo05.modelo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

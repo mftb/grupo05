@@ -1,4 +1,4 @@
-package br.com.caelum.goodbuy;
+package br.unicamp.ic.mc437.grupo05;
 
 import java.util.ArrayList;
 import java.util.List;

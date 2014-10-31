@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package br.com.caelum.vraptor.blank;
+package br.unicamp.ic.mc437.grupo05.blank;
 
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Resource;

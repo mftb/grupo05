@@ -1,11 +1,11 @@
-package br.com.caelum.goodbuy.infra;
+package br.unicamp.ic.mc437.grupo05.infra;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.criterion.Restrictions;
 
-import br.com.caelum.goodbuy.modelo.Usuario;
 import br.com.caelum.vraptor.ioc.Component;
+import br.unicamp.ic.mc437.grupo05.modelo.Usuario;
 
 @Component
 public class UsuarioDao {
