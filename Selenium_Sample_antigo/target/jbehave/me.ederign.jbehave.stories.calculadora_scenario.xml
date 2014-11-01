@@ -1,0 +1,7 @@
+<story path="me/ederign/jbehave/stories/calculadora_scenario.story" title="">
+<scenario keyword="Scenario:" title="Calculadora que soma">
+<step outcome="successful">Given uma calculadora</step>
+<step outcome="successful">When eu somo 1 e 2</step>
+<step outcome="successful">Then o resultado sera 3</step>
+</scenario>
+</story>
