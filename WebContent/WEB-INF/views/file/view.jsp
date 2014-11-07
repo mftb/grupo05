@@ -6,6 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	<title>Upload de arquivos</title>
 	</head>
 	<body>
 		<h1>Arquivos de Teste</h1>

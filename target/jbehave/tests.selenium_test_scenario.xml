@@ -1,0 +1,30 @@
+<story path="tests/selenium_test_scenario.story" title="">
+<scenario keyword="Scenario:" title="Uol website">
+<examples keyword="Examples:">
+<step>Given the Chosen Website is &lt;URL&gt;</step>
+<step>When the user clicks &lt;elemName&gt;</step>
+<step>Then the pageTitle should be &lt;someTitle&gt;</step>
+<parameters>
+<names><name>URL</name><name>elemName</name><name>someTitle</name></names>
+<values><value>http://www.uol.com.br</value><value>CARROS</value><value>Carros: not&#237;cias, lan&#231;amentos e avalia&#231;&#245;es sobre carros - UOL Carros</value></values>
+<values><value>http://www.uol.com.br</value><value>ECONOMIA</value><value>UOL Economia: encontre orienta&#231;&#245;es e not&#237;cias sobre economia - UOL Economia</value></values>
+<values><value>http://localhost:8080/MC437G5/file/view</value><value>Visualizar</value><value>Resultados dos testes</value></values>
+</parameters>
+
+<example keyword="Example:">{URL=http://www.uol.com.br, elemName=CARROS, someTitle=Carros: not&#237;cias, lan&#231;amentos e avalia&#231;&#245;es sobre carros - UOL Carros}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://www.uol.com.br</parameter></step>
+<step outcome="successful">When the user clicks <parameter>CARROS</parameter></step>
+<step outcome="successful">Then the pageTitle should be <parameter>Carros: not&#237;cias, lan&#231;amentos e avalia&#231;&#245;es sobre carros - UOL Carros</parameter></step>
+
+<example keyword="Example:">{URL=http://www.uol.com.br, elemName=ECONOMIA, someTitle=UOL Economia: encontre orienta&#231;&#245;es e not&#237;cias sobre economia - UOL Economia}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://www.uol.com.br</parameter></step>
+<step outcome="successful">When the user clicks <parameter>ECONOMIA</parameter></step>
+<step outcome="successful">Then the pageTitle should be <parameter>UOL Economia: encontre orienta&#231;&#245;es e not&#237;cias sobre economia - UOL Economia</parameter></step>
+
+<example keyword="Example:">{URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/MC437G5/file/view</parameter></step>
+<step outcome="successful">When the user clicks <parameter>Visualizar</parameter></step>
+<step outcome="successful">Then the pageTitle should be <parameter>Resultados dos testes</parameter></step>
+</examples>
+</scenario>
+</story>

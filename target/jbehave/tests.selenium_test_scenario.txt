@@ -1,0 +1,30 @@
+
+(tests/selenium_test_scenario.story)
+Scenario: Uol website
+Examples:
+Given the Chosen Website is <URL>
+When the user clicks <elemName>
+Then the pageTitle should be <someTitle>
+
+|URL|elemName|someTitle|
+|http://www.uol.com.br|CARROS|Carros: notícias, lançamentos e avaliações sobre carros - UOL Carros|
+|http://www.uol.com.br|ECONOMIA|UOL Economia: encontre orientações e notícias sobre economia - UOL Economia|
+|http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
+
+Example: {URL=http://www.uol.com.br, elemName=CARROS, someTitle=Carros: notícias, lançamentos e avaliações sobre carros - UOL Carros}
+Given the Chosen Website is http://www.uol.com.br
+When the user clicks CARROS
+Then the pageTitle should be Carros: notícias, lançamentos e avaliações sobre carros - UOL Carros
+
+Example: {URL=http://www.uol.com.br, elemName=ECONOMIA, someTitle=UOL Economia: encontre orientações e notícias sobre economia - UOL Economia}
+Given the Chosen Website is http://www.uol.com.br
+When the user clicks ECONOMIA
+Then the pageTitle should be UOL Economia: encontre orientações e notícias sobre economia - UOL Economia
+
+Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}
+Given the Chosen Website is http://localhost:8080/MC437G5/file/view
+When the user clicks Visualizar
+Then the pageTitle should be Resultados dos testes
+
+
+

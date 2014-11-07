@@ -10,6 +10,7 @@ Examples:
 |URL|elemName|someTitle|
 |http://www.uol.com.br|CARROS|Carros: notícias, lançamentos e avaliações sobre carros - UOL Carros|
 |http://www.uol.com.br|ECONOMIA|UOL Economia: encontre orientações e notícias sobre economia - UOL Economia|
+|http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
 
 
 

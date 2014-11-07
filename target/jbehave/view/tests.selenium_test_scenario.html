@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>tests.selenium_test_scenario</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">tests/selenium_test_scenario.story</div>
+<div class="scenario">
+<h2>Scenario: Uol website</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the Chosen Website is &lt;URL&gt;</div>
+<div class="step">When the user clicks &lt;elemName&gt;</div>
+<div class="step">Then the pageTitle should be &lt;someTitle&gt;</div>
+<table>
+<thead>
+<tr>
+<th>URL</th><th>elemName</th><th>someTitle</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>http://www.uol.com.br</td><td>CARROS</td><td>Carros: not&iacute;cias, lan&ccedil;amentos e avalia&ccedil;&otilde;es sobre carros - UOL Carros</td></tr>
+<tr>
+<td>http://www.uol.com.br</td><td>ECONOMIA</td><td>UOL Economia: encontre orienta&ccedil;&otilde;es e not&iacute;cias sobre economia - UOL Economia</td></tr>
+<tr>
+<td>http://localhost:8080/MC437G5/file/view</td><td>Visualizar</td><td>Resultados dos testes</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {URL=http://www.uol.com.br, elemName=CARROS, someTitle=Carros: not&iacute;cias, lan&ccedil;amentos e avalia&ccedil;&otilde;es sobre carros - UOL Carros}</h3>
+<div class="step successful">Given the Chosen Website is <span class="step parameter">http://www.uol.com.br</span></div>
+<div class="step successful">When the user clicks <span class="step parameter">CARROS</span></div>
+<div class="step successful">Then the pageTitle should be <span class="step parameter">Carros: not&iacute;cias, lan&ccedil;amentos e avalia&ccedil;&otilde;es sobre carros - UOL Carros</span></div>
+
+<h3 class="example">Example: {URL=http://www.uol.com.br, elemName=ECONOMIA, someTitle=UOL Economia: encontre orienta&ccedil;&otilde;es e not&iacute;cias sobre economia - UOL Economia}</h3>
+<div class="step successful">Given the Chosen Website is <span class="step parameter">http://www.uol.com.br</span></div>
+<div class="step successful">When the user clicks <span class="step parameter">ECONOMIA</span></div>
+<div class="step successful">Then the pageTitle should be <span class="step parameter">UOL Economia: encontre orienta&ccedil;&otilde;es e not&iacute;cias sobre economia - UOL Economia</span></div>
+
+<h3 class="example">Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}</h3>
+<div class="step successful">Given the Chosen Website is <span class="step parameter">http://localhost:8080/MC437G5/file/view</span></div>
+<div class="step successful">When the user clicks <span class="step parameter">Visualizar</span></div>
+<div class="step successful">Then the pageTitle should be <span class="step parameter">Resultados dos testes</span></div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
