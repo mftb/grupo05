@@ -3,6 +3,7 @@
     <wb-module deploy-name="MC437G5">
         <wb-resource deploy-path="/" source-path="/WebContent"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/JBehave_tests/tests"/>
         <property name="java-output-path" value="/MC437G5/build/classes"/>
         <property name="context-root" value="MC437G5"/>
     </wb-module>
