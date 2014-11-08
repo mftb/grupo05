@@ -1,16 +1,15 @@
-Narrative: User browse in the page
+Narrative: User browse the page
     Depending of what he clicks, something happens
 
-Scenario: Uol website
+Scenario: Website Navigation Test
 Given the Chosen Website is <URL>
 When the user clicks <elemName>
 Then the pageTitle should be <someTitle>
 
 Examples:
 |URL|elemName|someTitle|
-|http://www.uol.com.br|CARROS|Carros: notícias, lançamentos e avaliações sobre carros - UOL Carros|
-|http://www.uol.com.br|ECONOMIA|UOL Economia: encontre orientações e notícias sobre economia - UOL Economia|
 |http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
+|http://localhost:8080/MC437G5/file/view|Faça o upload de um novo arquivo|Upload de arquivos|
 
 
 

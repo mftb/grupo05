@@ -1,0 +1,34 @@
+
+(tests/mutation_score_scenario.story)
+Scenario: Mutation Score Calculation
+Examples:
+Given the respective mutation tests data
+When the number of mutants killed is <mutantsKilled>
+When the total number of mutants is <totalMutants>
+Then the mutation score should be <mutationScore>
+
+|mutantsKilled|totalMutants|mutationScore|
+|16|16|1|
+|8|16|0.5|
+|4|16|0.25|
+
+Example: {mutantsKilled=16, totalMutants=16, mutationScore=1}
+Given the respective mutation tests data
+When the number of mutants killed is 16
+When the total number of mutants is 16
+Then the mutation score should be 1
+
+Example: {mutantsKilled=8, totalMutants=16, mutationScore=0.5}
+Given the respective mutation tests data
+When the number of mutants killed is 8
+When the total number of mutants is 16
+Then the mutation score should be 0.5
+
+Example: {mutantsKilled=4, totalMutants=16, mutationScore=0.25}
+Given the respective mutation tests data
+When the number of mutants killed is 4
+When the total number of mutants is 16
+Then the mutation score should be 0.25
+
+
+

@@ -1,36 +1,47 @@
 <html>
 <head>
-<title>BeforeStories</title>
+<title>tests.mutation_score_scenario</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
 </head>
 <body>
-  
-<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
-#org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Fri Nov 07 22:22:28 BRST 2014
-duration=1
-notAllowed=0
-examples=0
-scenariosNotAllowed=0
-pending=0
-stepsPending=0
-stepsNotPerformed=0
-scenariosSuccessful=0
-givenStoryScenarios=0
-givenStoryScenariosFailed=0
-stepsFailed=0
-scenarios=0
-givenStories=0
-stepsSuccessful=0
-steps=0
-givenStoryScenariosPending=0
-scenariosPending=0
-stepsIgnorable=0
-givenStoryScenariosNotAllowed=0
-scenariosFailed=0
-givenStoryScenariosSuccessful=0
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(tests/mutation_score_scenario.story)
+Scenario: Mutation Score Calculation
+Examples:
+Given the respective mutation tests data
+When the number of mutants killed is <mutantsKilled>
+When the total number of mutants is <totalMutants>
+Then the mutation score should be <mutationScore>
+
+|mutantsKilled|totalMutants|mutationScore|
+|16|16|1|
+|8|16|0.5|
+|4|16|0.25|
+
+Example: {mutantsKilled=16, totalMutants=16, mutationScore=1}
+Given the respective mutation tests data
+When the number of mutants killed is 16
+When the total number of mutants is 16
+Then the mutation score should be 1
+
+Example: {mutantsKilled=8, totalMutants=16, mutationScore=0.5}
+Given the respective mutation tests data
+When the number of mutants killed is 8
+When the total number of mutants is 16
+Then the mutation score should be 0.5
+
+Example: {mutantsKilled=4, totalMutants=16, mutationScore=0.25}
+Given the respective mutation tests data
+When the number of mutants killed is 4
+When the total number of mutants is 16
+Then the mutation score should be 0.25
+
+
+
 
 ]]></script>
 </body>
