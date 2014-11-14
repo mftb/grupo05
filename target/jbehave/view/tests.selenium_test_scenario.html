@@ -15,7 +15,8 @@
 <h3>Examples:</h3>
 <div class="step">Given the Chosen Website is &lt;URL&gt;</div>
 <div class="step">When the user clicks &lt;elemName&gt;</div>
-<div class="step">Then the pageTitle should be &lt;someTitle&gt;</div>
+<div class="step">When the user waits 1 seconds</div>
+<div class="step">Then the page title should be &lt;someTitle&gt;</div>
 <table>
 <thead>
 <tr>
@@ -25,19 +26,38 @@
 <tr>
 <td>http://localhost:8080/MC437G5/file/view</td><td>Visualizar</td><td>Resultados dos testes</td></tr>
 <tr>
-<td>http://localhost:8080/MC437G5/file/view</td><td>Fa&ccedil;a o upload de um novo arquivo</td><td>Upload de arquivos</td></tr>
+<td>http://localhost:8080/MC437G5/file/view</td><td>Fa&#65533;a o upload de um novo arquivo</td><td>Upload de arquivos</td></tr>
+<tr>
+<td>http://localhost:8080/MC437G5/file/view</td><td>Compartilhar</td><td>Compartilhamento de arquivos</td></tr>
 </tbody>
 </table>
 
 <h3 class="example">Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}</h3>
 <div class="step successful">Given the Chosen Website is <span class="step parameter">http://localhost:8080/MC437G5/file/view</span></div>
 <div class="step successful">When the user clicks <span class="step parameter">Visualizar</span></div>
-<div class="step successful">Then the pageTitle should be <span class="step parameter">Resultados dos testes</span></div>
+<div class="step successful">When the user waits <span class="step parameter">1</span> seconds</div>
+<div class="step successful">Then the page title should be <span class="step parameter">Resultados dos testes</span></div>
 
-<h3 class="example">Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Fa&ccedil;a o upload de um novo arquivo, someTitle=Upload de arquivos}</h3>
+<h3 class="example">Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Fa&#65533;a o upload de um novo arquivo, someTitle=Upload de arquivos}</h3>
 <div class="step successful">Given the Chosen Website is <span class="step parameter">http://localhost:8080/MC437G5/file/view</span></div>
-<div class="step successful">When the user clicks <span class="step parameter">Fa&ccedil;a o upload de um novo arquivo</span></div>
-<div class="step successful">Then the pageTitle should be <span class="step parameter">Upload de arquivos</span></div>
+<div class="step failed">When the user clicks <span class="step parameter">Fa&#65533;a o upload de um novo arquivo</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Fa&#65533;a o upload de um novo arquivo&quot;}
+Command duration or timeout: 61 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
+System info: host: 'beach.lab.ic.unicamp.br', ip: '143.106.16.11', os.name: 'Linux', os.arch: 'amd64', os.version: '3.15.6-200.fc20.x86_64', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b46e035-1e3a-41aa-8cbc-538ee02f22b2</span></div>
+<div class="step notPerformed">When the user waits <span class="step parameter">1</span> seconds <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step notPerformed">Then the page title should be <span class="step parameter">Upload de arquivos</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+
+<h3 class="example">Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Compartilhar, someTitle=Compartilhamento de arquivos}</h3>
+<div class="step successful">Given the Chosen Website is <span class="step parameter">http://localhost:8080/MC437G5/file/view</span></div>
+<div class="step successful">When the user clicks <span class="step parameter">Compartilhar</span></div>
+<div class="step successful">When the user waits <span class="step parameter">1</span> seconds</div>
+<div class="step failed">Then the page title should be <span class="step parameter">Compartilhamento de arquivos</span> <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: 
+Expected: is &quot;Compartilhamento de arquivos&quot;
+     but: was &quot;Upload de arquivos&quot;</span></div>
 </div>
 </div>
 </div>

@@ -4,12 +4,14 @@ Narrative: User browse the page
 Scenario: Website Navigation Test
 Given the Chosen Website is <URL>
 When the user clicks <elemName>
-Then the pageTitle should be <someTitle>
+When the user waits 1 seconds
+Then the page title should be <someTitle>
 
 Examples:
 |URL|elemName|someTitle|
 |http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
-|http://localhost:8080/MC437G5/file/view|Faça o upload de um novo arquivo|Upload de arquivos|
+|http://localhost:8080/MC437G5/file/view|FaÔøΩa o upload de um novo arquivo|Upload de arquivos|
+|http://localhost:8080/MC437G5/file/view|Compartilhar|Compartilhamento de arquivos|
 
 
 

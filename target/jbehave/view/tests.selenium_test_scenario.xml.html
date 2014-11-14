@@ -13,22 +13,41 @@
 <examples keyword="Examples:">
 <step>Given the Chosen Website is &lt;URL&gt;</step>
 <step>When the user clicks &lt;elemName&gt;</step>
-<step>Then the pageTitle should be &lt;someTitle&gt;</step>
+<step>When the user waits 1 seconds</step>
+<step>Then the page title should be &lt;someTitle&gt;</step>
 <parameters>
 <names><name>URL</name><name>elemName</name><name>someTitle</name></names>
 <values><value>http://localhost:8080/MC437G5/file/view</value><value>Visualizar</value><value>Resultados dos testes</value></values>
-<values><value>http://localhost:8080/MC437G5/file/view</value><value>Fa&#231;a o upload de um novo arquivo</value><value>Upload de arquivos</value></values>
+<values><value>http://localhost:8080/MC437G5/file/view</value><value>Fa&#65533;a o upload de um novo arquivo</value><value>Upload de arquivos</value></values>
+<values><value>http://localhost:8080/MC437G5/file/view</value><value>Compartilhar</value><value>Compartilhamento de arquivos</value></values>
 </parameters>
 
 <example keyword="Example:">{URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}</example>
 <step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/MC437G5/file/view</parameter></step>
 <step outcome="successful">When the user clicks <parameter>Visualizar</parameter></step>
-<step outcome="successful">Then the pageTitle should be <parameter>Resultados dos testes</parameter></step>
+<step outcome="successful">When the user waits <parameter>1</parameter> seconds</step>
+<step outcome="successful">Then the page title should be <parameter>Resultados dos testes</parameter></step>
 
-<example keyword="Example:">{URL=http://localhost:8080/MC437G5/file/view, elemName=Fa&#231;a o upload de um novo arquivo, someTitle=Upload de arquivos}</example>
+<example keyword="Example:">{URL=http://localhost:8080/MC437G5/file/view, elemName=Fa&#65533;a o upload de um novo arquivo, someTitle=Upload de arquivos}</example>
 <step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/MC437G5/file/view</parameter></step>
-<step outcome="successful">When the user clicks <parameter>Fa&#231;a o upload de um novo arquivo</parameter></step>
-<step outcome="successful">Then the pageTitle should be <parameter>Upload de arquivos</parameter></step>
+<step outcome="failed" keyword="FAILED">When the user clicks <parameter>Fa&#65533;a o upload de um novo arquivo</parameter><failure>org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;link text&quot;,&quot;selector&quot;:&quot;Fa&#65533;a o upload de um novo arquivo&quot;}
+Command duration or timeout: 61 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.43.0&apos;, revision: &apos;597b76b&apos;, time: &apos;2014-09-09 20:52:38&apos;
+System info: host: &apos;beach.lab.ic.unicamp.br&apos;, ip: &apos;143.106.16.11&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.15.6-200.fc20.x86_64&apos;, java.version: &apos;1.8.0_05&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b46e035-1e3a-41aa-8cbc-538ee02f22b2</failure></step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">When the user waits <parameter>1</parameter> seconds</step>
+<step outcome="notPerformed" keyword="NOT PERFORMED">Then the page title should be <parameter>Upload de arquivos</parameter></step>
+
+<example keyword="Example:">{URL=http://localhost:8080/MC437G5/file/view, elemName=Compartilhar, someTitle=Compartilhamento de arquivos}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/MC437G5/file/view</parameter></step>
+<step outcome="successful">When the user clicks <parameter>Compartilhar</parameter></step>
+<step outcome="successful">When the user waits <parameter>1</parameter> seconds</step>
+<step outcome="failed" keyword="FAILED">Then the page title should be <parameter>Compartilhamento de arquivos</parameter><failure>java.lang.AssertionError: 
+Expected: is &quot;Compartilhamento de arquivos&quot;
+     but: was &quot;Upload de arquivos&quot;</failure></step>
 </examples>
 </scenario>
 </story>
