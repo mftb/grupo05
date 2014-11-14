@@ -1,9 +1,9 @@
 Tutorial de como dar fork no repositorio para comecar a contribuir:
 https://help.github.com/articles/fork-a-repo/
 
-Comandos basicos:
-    - Copia o repositorio do grupo:
-        ~ $ git clone https://github.com/mftb/grupo05.git
+CHEATSHEET
+    - Clona o repositorio do grupo:
+        $ git clone https://github.com/mftb/grupo05.git
     
     - Para atualizar seu repositorio local:
         $ git pull
@@ -16,4 +16,47 @@ Comandos basicos:
     
     - Para dar push no repositorio (remoto):
         $ git push origin master
+
+TUTORIAL
+Seja bem-vindo ao git! Esta eh uma ferramenta muito util de versionamento de codigo.
+
+O git funciona de maneira distribuida, mantendo um repositorio central e repositorios de trabalho.
+O repositorio central serve de referencia para os repositorios de trabalho, nos quais as pessoas
+colaboradoras para o projeto fazem suas alteracoes as mandam para o repositorio central de modo
+a ficarem disponiveis para todos.
+
+Para iniciar seu repositorio local, basta rodar o seguinte comando num terminal:
+
+        $ git clone https://github.com/mftb/grupo05.git
+
+Esse comando faz uma copia do repositorio central para o seu local. A partir disso, voce pode
+fazer alteracoes, criar e remover arquivos, e enviar essas mudancas para o repositorio central.
+
+Alem disso, por ser um sistema de versionamento de codigo, todo o historico de alteracoes eh salvo,
+possibilitando reverter alguma alteracao que tenha causado um bug ao projeto. Alem disso, eh possivel
+criar "universos paralelos" - as branches - nas quais voce pode ter diferentes versoes do projeto
+convivendo em realidades paralelas. Mais sobre branches sera dito no futuro.
+
+Para salvar no seu repositorio local alguma alteracao que voce tenha feito no seu codigo, rode os
+comandos:
+
+        $ git add .
+        $ git commit -m "<mensagem>"
+
+O primeiro comando é o git add. Ele marca as alteracoes que voce fez para versionamento. O segundo
+comando eh o git commit, que efetivamente salva as alteracoes no repositorio. Juntamente com o commit,
+voce precisa enviar uma mensagem descrevendo as alteracoes que foram feitas no codigo.
+
+Vale ressaltar que o commit salva apenas localmente as suas alteracoes. Para enviar suas alteracoes
+para o repositorio central, voce precisa usar o comando
+
+        $ git push origin master
+
+Esse comando envia suas alteracoes para o repositorio central. Contudo, eh prudente sempre atualizar
+seu repositorio antes de dar push. Isso pode ser feito atraves do comando
+
+        $ git pull
+
+Pull pega as alteracoes do repositorio central e as aplica no seu local.
+
 
