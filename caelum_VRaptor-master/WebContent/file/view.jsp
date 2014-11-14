@@ -21,7 +21,7 @@
 			<h1 class="pagetitle">Arquivos de Teste</h1>
 			<div id="uploadlink">
 				<h2> Upload </h2>
-				<a href="file/upload">Faça o upload de um novo arquivo</a>
+				<a href="upload">Faça o upload de um novo arquivo</a>
 			</div>
 		</div>
 		<div class="main">
