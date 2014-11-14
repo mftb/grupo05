@@ -23,8 +23,9 @@
 		<property name="show_sql">true</property>
 		<property name="format_sql">true</property>
 		
-		<mapping class="br.com.caelum.goodbuy.modelo.Produto" />
-		<mapping class="br.com.caelum.goodbuy.modelo.Usuario" />
+		<mapping class="br.unicamp.ic.mc437.grupo05.modelo.Produto" />
+		<mapping class="br.unicamp.ic.mc437.grupo05.modelo.Usuario" />
+		<mapping class="br.unicamp.ic.mc437.grupo05.modelo.XmlFile" />
 		
 	</session-factory>
 </hibernate-configuration>
