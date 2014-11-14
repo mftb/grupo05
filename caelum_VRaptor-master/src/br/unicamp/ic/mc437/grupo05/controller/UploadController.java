@@ -1,17 +1,13 @@
 package br.unicamp.ic.mc437.grupo05.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import br.com.caelum.vraptor.Path;
+import br.com.caelum.vraptor.Resource;
 
-@Controller
-//@RequestMapping("/file")
+@Resource
 public class UploadController {
-	
-//	@RequestMapping("/upload")
-//	public String loadUploadPage(){
-//		return "/file/upload";
-//	}
-	
-	
+
+	@Path("/upload")
+	public void upload() {
+	}
 
 }
