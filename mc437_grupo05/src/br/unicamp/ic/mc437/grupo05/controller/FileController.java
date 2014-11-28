@@ -38,10 +38,6 @@ public class FileController {
 	public void upload() {
 	}
 	
-	@Path("/faq.png")
-	public void faqpng() {
-	}
-
 	@Post
 	@Path("/uploadFile")
 	public void uploadFile(UploadedFile file) {
