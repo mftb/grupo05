@@ -9,13 +9,8 @@ Then the page title should be <someTitle>
 
 Examples:
 |URL|elemName|someTitle|
-|http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
-|http://localhost:8080/MC437G5/file/view|Fa�a o upload de um novo arquivo|Upload de arquivos|
-|http://localhost:8080/MC437G5/file/view|Compartilhar|Compartilhamento de arquivos|
-
-
-
-
+|http://localhost:8080/goodbuy/file/view|Submissões|MC437 Grupo 5|
+|http://localhost:8080/goodbuy/file/view|Home|MC437 Grupo 5|
 
 
 

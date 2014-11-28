@@ -1,36 +1,40 @@
 <html>
 <head>
-<title>tests.mutation_score_scenario</title>
+<title>tests.upload_scenario</title>
 <style type="text/css" media="all">
 @import url( "./style/jbehave-core.css" );
 </style>
 </head>
 <body>
-  
-<script type="syntaxhighlighter" class="brush: plain"><![CDATA[
-#org.jbehave.core.reporters.PostStoryStatisticsCollector
-#Fri Nov 28 19:39:56 BRST 2014
-duration=56
-notAllowed=0
-examples=5
-scenariosNotAllowed=0
-pending=0
-stepsPending=0
-stepsNotPerformed=0
-scenariosSuccessful=1
-givenStoryScenarios=0
-givenStoryScenariosFailed=0
-stepsFailed=0
-scenarios=1
-givenStories=0
-stepsSuccessful=20
-steps=20
-givenStoryScenariosPending=0
-scenariosPending=0
-stepsIgnorable=0
-givenStoryScenariosNotAllowed=0
-scenariosFailed=0
-givenStoryScenariosSuccessful=0
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(tests/upload_scenario.story)
+Scenario: File upload
+Examples:
+Given the Chosen Website is <URL>
+When the user clicks <elemName>
+When the user waits 1 seconds
+Then the page title should be <someTitle>
+
+|URL|elemName|someTitle|
+|http://localhost:8080/goodbuy/file/view|Upload|MC437 Grupo 5|
+|http://localhost:8080/goodbuy/file/view|Upload|MC437 Grupo 5|
+
+Example: {URL=http://localhost:8080/goodbuy/file/view, elemName=Upload, someTitle=MC437 Grupo 5}
+Given the Chosen Website is http://localhost:8080/goodbuy/file/view
+When the user clicks Upload
+When the user waits 1 seconds
+Then the page title should be MC437 Grupo 5
+
+Example: {URL=http://localhost:8080/goodbuy/file/view, elemName=Upload, someTitle=MC437 Grupo 5}
+Given the Chosen Website is http://localhost:8080/goodbuy/file/view
+When the user clicks Upload
+When the user waits 1 seconds
+Then the page title should be MC437 Grupo 5
+
+
+
 
 ]]></script>
 </body>

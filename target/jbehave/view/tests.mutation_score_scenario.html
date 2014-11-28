@@ -29,6 +29,10 @@
 <td>8</td><td>16</td><td>0.5</td></tr>
 <tr>
 <td>4</td><td>16</td><td>0.25</td></tr>
+<tr>
+<td>8</td><td>32</td><td>0.25</td></tr>
+<tr>
+<td>4</td><td>32</td><td>0.125</td></tr>
 </tbody>
 </table>
 
@@ -49,6 +53,18 @@
 <div class="step successful">When the number of mutants killed is <span class="step parameter">4</span></div>
 <div class="step successful">When the total number of mutants is <span class="step parameter">16</span></div>
 <div class="step successful">Then the mutation score should be <span class="step parameter">0.25</span></div>
+
+<h3 class="example">Example: {mutantsKilled=8, totalMutants=32, mutationScore=0.25}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">8</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">32</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.25</span></div>
+
+<h3 class="example">Example: {mutantsKilled=4, totalMutants=32, mutationScore=0.125}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">4</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">32</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.125</span></div>
 </div>
 </div>
 </div>

@@ -10,10 +10,7 @@ import org.jbehave.core.reporters.StoryReporterBuilder;
 import org.jbehave.core.steps.CandidateSteps;
 import org.jbehave.core.steps.InstanceStepsFactory;
 
-import tests.MutationScoreScenarioSteps;
-import tests.SeleniumTestScenarioSteps;
-
-public class MutationScoreScenario extends JUnitStory {
+public class UploadScenario extends JUnitStory {
     @Override
     public Configuration configuration() {
         return new MostUsefulConfiguration().useStoryLoader(new LoadFromClasspath(this.getClass()))
@@ -21,6 +18,6 @@ public class MutationScoreScenario extends JUnitStory {
     }
     @Override
     public List<CandidateSteps> candidateSteps() {
-        return new InstanceStepsFactory(configuration(), new MutationScoreScenarioSteps(), new SeleniumTestScenarioSteps()).createCandidateSteps();
+        return new InstanceStepsFactory(configuration(), new UploadScenarioSteps(), new UploadScenarioSteps()).createCandidateSteps();
     }
 }

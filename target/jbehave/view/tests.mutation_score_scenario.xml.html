@@ -20,6 +20,8 @@
 <values><value>16</value><value>16</value><value>1</value></values>
 <values><value>8</value><value>16</value><value>0.5</value></values>
 <values><value>4</value><value>16</value><value>0.25</value></values>
+<values><value>8</value><value>32</value><value>0.25</value></values>
+<values><value>4</value><value>32</value><value>0.125</value></values>
 </parameters>
 
 <example keyword="Example:">{mutantsKilled=16, totalMutants=16, mutationScore=1}</example>
@@ -39,6 +41,18 @@
 <step outcome="successful">When the number of mutants killed is <parameter>4</parameter></step>
 <step outcome="successful">When the total number of mutants is <parameter>16</parameter></step>
 <step outcome="successful">Then the mutation score should be <parameter>0.25</parameter></step>
+
+<example keyword="Example:">{mutantsKilled=8, totalMutants=32, mutationScore=0.25}</example>
+<step outcome="successful">Given the respective mutation tests data</step>
+<step outcome="successful">When the number of mutants killed is <parameter>8</parameter></step>
+<step outcome="successful">When the total number of mutants is <parameter>32</parameter></step>
+<step outcome="successful">Then the mutation score should be <parameter>0.25</parameter></step>
+
+<example keyword="Example:">{mutantsKilled=4, totalMutants=32, mutationScore=0.125}</example>
+<step outcome="successful">Given the respective mutation tests data</step>
+<step outcome="successful">When the number of mutants killed is <parameter>4</parameter></step>
+<step outcome="successful">When the total number of mutants is <parameter>32</parameter></step>
+<step outcome="successful">Then the mutation score should be <parameter>0.125</parameter></step>
 </examples>
 </scenario>
 </story>
