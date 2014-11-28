@@ -53,7 +53,7 @@ table {
 html,body { min-height:100%; }
 
 body {
-	background-color: #575757;
+	background-color: #ACACAC;
 	color: #FCFCFC;
 }
 .container {
@@ -119,6 +119,17 @@ ul#menu li.menu-separator {
 	border-radius: 20px;
 }
 
+.faq{
+	height: 900px;
+	width: 900px;
+	padding: 30px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #707070;
+	border-radius: 20px;
+}
+
+
 .breadcrumb {
 	font-size: 10px;
 	color: #BDBDBD;
@@ -131,4 +142,17 @@ ul#menu li.menu-separator {
 	font-size: 30px;
 	margin-bottom: 20px;
 }
+
+h2.faqquestion {
+	font-size: 25px;
+	color: #CEF4ED;
+	margin-bottom: 5px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+p.faqanswer {
+	font-size: 18px;
+	color: #F7FFF1;
+}
+
 /* ----- End Main Common ----- */

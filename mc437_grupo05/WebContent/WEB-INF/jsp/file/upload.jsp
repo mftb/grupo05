@@ -9,6 +9,7 @@
 			<a href="view"><li class="menu-item">Home</li></a>
 			<a href="list"><li class="menu-item">Submiss&otilde;es</li></a>
 			<a href="upload"><li class="menu-item">Upload</li></a>
+			<a href="faq"><img src='./faq.png' alt='FAQ'></a>
 		</ul>
 	</div>
 	<div class="main">

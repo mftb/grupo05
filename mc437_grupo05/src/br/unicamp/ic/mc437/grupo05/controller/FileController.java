@@ -26,12 +26,20 @@ public class FileController {
 		this.xmlFileDao = xmlFileDao;
 	}
 
+	@Path("/faq")
+	public void faq() {
+	}
+	
 	@Path("/list")
 	public void list() {
 	}
 
 	@Path("/upload")
 	public void upload() {
+	}
+	
+	@Path("/faq.png")
+	public void faqpng() {
 	}
 
 	@Post
