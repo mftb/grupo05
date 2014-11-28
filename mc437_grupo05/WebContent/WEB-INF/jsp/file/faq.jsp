@@ -9,7 +9,7 @@
 			<a href="view"><li class="menu-item">Home</li></a>
 			<a href="list"><li class="menu-item">Submiss&otilde;es</li></a>
 			<a href="upload"><li class="menu-item">Upload</li></a>
-			<a href="faq"><img src='./faq.png' alt='FAQ'></a>
+			<a href="faq"><li class="menu-item">FAQ</li></a>
 		</ul>
 	</div>
 	<div class="faq">
@@ -17,17 +17,21 @@
 			<a href="view">FAQ</a>
 		</div>
 		<br>
-		<h1 class="pagetitle">FAQ</h1>
+		<h1 class="pagetitle">FAQ - Guia do Usu&aacute;rio</h1>
 		<div id="uploadlink">
-			<h2 class="faqquestion">Bacon ipsum dolor amet meatloaf capicola chuck?</h2>
-			<p class="faqanswer"> Pork strip steak pork loin, sausage salami biltong short ribs rump tri-tip tongue turkey
-			turducken pig jerky. Pork chop short ribs pork loin beef, prosciutto filet mignon cow pork belly turkey alcatra biltong.
-			Fatback picanha t-bone, venison bresaola salami shoulder alcatra doner ham hock jerky frankfurter.</p>
+			<h2 class="faqquestion">Como posso fazer upload de XML?</h2>
+			<p class="faqanswer">
+			1) V&aacute; para a <a href='upload'>tela de upload</a>.<br>
+			2) Clique no bot&atilde;o "Browse" para selecionar o arquivo desejado para upload.<br>
+			3) Clique no bot&atilde;o "Submeter" para fazer o upload do arquivo.<br><br>
+			Vale lembrar que &eacute; poss&iacute;vel acessar a interface de upload atrav&eacute;s da <a href='view'>home</a>.
+			</p>
 			<br><br>
-			<h2 class="faqquestion">Short loin salami flank pork, andouille meatball alcatra strip steak?</h2>
-			<p class="faqanswer">Short loin picanha landjaeger ham, pork tongue short ribs boudin pastrami drumstick
-			pork loin tri-tip ham hock sirloin. Pastrami tenderloin shoulder, kevin shankle venison pancetta
-			 short ribs. Short ribs prosciutto pork chop rump venison cupim ham hamburger.</p>
+			<h2 class="faqquestion">Onde posso visualizar meus arquivos salvos?</h2>
+			<p class="faqanswer">
+			Suas submiss&otilde;es, ou seja, seus arquivos salvos, podem ser visualizados atrav&eacute;s
+			da <a href='list'>interface de submiss&otilde;es</a>, ou diretamente na <a href='view'>home</a>.
+			</p>
 		</div>
 	</div>
 </div>
