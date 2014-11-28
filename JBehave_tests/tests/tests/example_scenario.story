@@ -1,5 +1,5 @@
-Narrative: User choose a file to be uploaded
-    The file ought to be uploaded and validated
+Narrative: This Scenario should be used as a template for others
+    Duplicate the three files associated and modify them.
 
 Scenario: File upload
 Given the Chosen Website is <URL>
