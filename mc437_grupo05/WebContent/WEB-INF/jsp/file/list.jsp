@@ -22,18 +22,17 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Arquivo</th>
-					<th>Adicionado em</th>
-					<th>Ações</th>
+					<th>Arquivo &nbsp;</th>
+					<th>Adicionado em&nbsp;</th>
+					<th>Ações&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach var="ownedFile" items="${ownedFilesList}">
 					<tr>
-						<td>${ownedFile.name}</td>
-						<td>${ownedFile.addTs}</td>
-						<td><a href="../test/results"> Visualizar </a> | <a href="">
-								Compartilhar </a></td>
+						<td>${ownedFile.name}&nbsp;</td>
+						<td>${ownedFile.addTs}&nbsp;</td>
+						<td><a href="../test/results">Visualizar&nbsp;</a><a href="">Compartilhar&nbsp;</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
@@ -46,19 +45,19 @@
 		<table>
 			<thead>
 				<tr>
-					<th>Arquivo</th>
-					<th>Adicionado por</th>
-					<th>Adicionado em</th>
-					<th>Ações</th>
+					<th>Arquivo&nbsp;</th>
+					<th>Adicionado por&nbsp;</th>
+					<th>Adicionado em&nbsp;</th>
+					<th>Ações&nbsp;</th>
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach var="sharedFile" items="${sharedFilesList}">
 					<tr>
-						<td>${sharedFile.name}</td>
-						<td>${sharedFile.owner}
-						<td>${sharedFiles.addTs}</td>
-						<td><a href="../test/results"> Visualizar </a></td>
+						<td>${sharedFile.name}&nbsp;</td>
+						<td>${sharedFile.owner}&nbsp;</td>
+						<td>${sharedFiles.addTs}&nbsp;</td>
+						<td><a href="../test/results"> Visualizar&nbsp;</a></td>
 					</tr>
 				</c:forEach>
 			</tbody>
