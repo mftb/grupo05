@@ -1,5 +1,8 @@
 package br.unicamp.ic.mc437.s22014.grupo5.parser.test;
 
+import java.util.List;
+
+import br.unicamp.ic.mc437.s22014.grupo5.model.MutantInfo;
 import br.unicamp.ic.mc437.s22014.grupo5.parser.Parser;
 
 public class ParserUnitTest {
@@ -9,6 +12,10 @@ public class ParserUnitTest {
 		String fileName = "test1";
 		Parser parser = new Parser(basePath, fileName);
 		
-		String value = parser.getField("bla");
+		List<MutantInfo> values = parser.parseIntoMutantInfoObjects();
+		
+		for(MutantInfo i : values){
+			System.out.println(i.toString());
+		}
 	}
 }
