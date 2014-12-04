@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>tests.mutation_score_scenario</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+<div class="story">
+<h1></h1>
+<div class="path">tests/mutation_score_scenario.story</div>
+<div class="scenario">
+<h2>Scenario: Mutation Score Calculation</h2>
+<div class="examples">
+<h3>Examples:</h3>
+<div class="step">Given the respective mutation tests data</div>
+<div class="step">When the number of mutants killed is &lt;mutantsKilled&gt;</div>
+<div class="step">When the total number of mutants is &lt;totalMutants&gt;</div>
+<div class="step">Then the mutation score should be &lt;mutationScore&gt;</div>
+<table>
+<thead>
+<tr>
+<th>mutantsKilled</th><th>totalMutants</th><th>mutationScore</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>16</td><td>16</td><td>1</td></tr>
+<tr>
+<td>8</td><td>16</td><td>0.5</td></tr>
+<tr>
+<td>4</td><td>16</td><td>0.25</td></tr>
+<tr>
+<td>8</td><td>32</td><td>0.25</td></tr>
+<tr>
+<td>4</td><td>32</td><td>0.125</td></tr>
+</tbody>
+</table>
+
+<h3 class="example">Example: {mutantsKilled=16, totalMutants=16, mutationScore=1}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">16</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">16</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">1</span></div>
+
+<h3 class="example">Example: {mutantsKilled=8, totalMutants=16, mutationScore=0.5}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">8</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">16</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.5</span></div>
+
+<h3 class="example">Example: {mutantsKilled=4, totalMutants=16, mutationScore=0.25}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">4</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">16</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.25</span></div>
+
+<h3 class="example">Example: {mutantsKilled=8, totalMutants=32, mutationScore=0.25}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">8</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">32</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.25</span></div>
+
+<h3 class="example">Example: {mutantsKilled=4, totalMutants=32, mutationScore=0.125}</h3>
+<div class="step successful">Given the respective mutation tests data</div>
+<div class="step successful">When the number of mutants killed is <span class="step parameter">4</span></div>
+<div class="step successful">When the total number of mutants is <span class="step parameter">32</span></div>
+<div class="step successful">Then the mutation score should be <span class="step parameter">0.125</span></div>
+</div>
+</div>
+</div>
+
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

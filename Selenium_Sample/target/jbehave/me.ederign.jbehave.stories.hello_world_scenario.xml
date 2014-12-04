@@ -1,0 +1,7 @@
+<story path="me/ederign/jbehave/stories/hello_world_scenario.story" title="">
+<scenario keyword="Scenario:" title="Hello World">
+<step outcome="successful">Given a name <parameter>Eder</parameter></step>
+<step outcome="successful">When I ask for hello</step>
+<step outcome="successful">Then should receive <parameter>Hello Eder</parameter></step>
+</scenario>
+</story>

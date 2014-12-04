@@ -1,0 +1,45 @@
+
+(tests/selenium_test_scenario.story)
+Scenario: Website Navigation Test
+Examples:
+Given the Chosen Website is <URL>
+When the user clicks <elemName>
+When the user waits 1 seconds
+Then the page title should be <someTitle>
+
+|URL|elemName|someTitle|
+|http://localhost:8080/MC437G5/file/view|Visualizar|Resultados dos testes|
+|http://localhost:8080/MC437G5/file/view|Fa�a o upload de um novo arquivo|Upload de arquivos|
+|http://localhost:8080/MC437G5/file/view|Compartilhar|Compartilhamento de arquivos|
+
+Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Visualizar, someTitle=Resultados dos testes}
+Given the Chosen Website is http://localhost:8080/MC437G5/file/view
+When the user clicks Visualizar
+When the user waits 1 seconds
+Then the page title should be Resultados dos testes
+
+Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Fa�a o upload de um novo arquivo, someTitle=Upload de arquivos}
+Given the Chosen Website is http://localhost:8080/MC437G5/file/view
+When the user clicks Fa�a o upload de um novo arquivo (FAILED)
+(org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"link text","selector":"Fa�a o upload de um novo arquivo"}
+Command duration or timeout: 61 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.0', revision: '597b76b', time: '2014-09-09 20:52:38'
+System info: host: 'beach.lab.ic.unicamp.br', ip: '143.106.16.11', os.name: 'Linux', os.arch: 'amd64', os.version: '3.15.6-200.fc20.x86_64', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=32.0, platform=LINUX, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7b46e035-1e3a-41aa-8cbc-538ee02f22b2)
+When the user waits 1 seconds (NOT PERFORMED)
+Then the page title should be Upload de arquivos (NOT PERFORMED)
+
+Example: {URL=http://localhost:8080/MC437G5/file/view, elemName=Compartilhar, someTitle=Compartilhamento de arquivos}
+Given the Chosen Website is http://localhost:8080/MC437G5/file/view
+When the user clicks Compartilhar
+When the user waits 1 seconds
+Then the page title should be Compartilhamento de arquivos (FAILED)
+(java.lang.AssertionError: 
+Expected: is "Compartilhamento de arquivos"
+     but: was "Upload de arquivos")
+
+
+

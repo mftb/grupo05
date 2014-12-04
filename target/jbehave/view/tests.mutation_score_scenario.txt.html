@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>tests.mutation_score_scenario</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: txt"><![CDATA[
+
+(tests/mutation_score_scenario.story)
+Scenario: Mutation Score Calculation
+Examples:
+Given the respective mutation tests data
+When the number of mutants killed is <mutantsKilled>
+When the total number of mutants is <totalMutants>
+Then the mutation score should be <mutationScore>
+
+|mutantsKilled|totalMutants|mutationScore|
+|16|16|1|
+|8|16|0.5|
+|4|16|0.25|
+|8|32|0.25|
+|4|32|0.125|
+
+Example: {mutantsKilled=16, totalMutants=16, mutationScore=1}
+Given the respective mutation tests data
+When the number of mutants killed is 16
+When the total number of mutants is 16
+Then the mutation score should be 1
+
+Example: {mutantsKilled=8, totalMutants=16, mutationScore=0.5}
+Given the respective mutation tests data
+When the number of mutants killed is 8
+When the total number of mutants is 16
+Then the mutation score should be 0.5
+
+Example: {mutantsKilled=4, totalMutants=16, mutationScore=0.25}
+Given the respective mutation tests data
+When the number of mutants killed is 4
+When the total number of mutants is 16
+Then the mutation score should be 0.25
+
+Example: {mutantsKilled=8, totalMutants=32, mutationScore=0.25}
+Given the respective mutation tests data
+When the number of mutants killed is 8
+When the total number of mutants is 32
+Then the mutation score should be 0.25
+
+Example: {mutantsKilled=4, totalMutants=32, mutationScore=0.125}
+Given the respective mutation tests data
+When the number of mutants killed is 4
+When the total number of mutants is 32
+Then the mutation score should be 0.125
+
+
+
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>

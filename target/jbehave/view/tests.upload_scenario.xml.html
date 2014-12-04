@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>tests.upload_scenario</title>
+<style type="text/css" media="all">
+@import url( "./style/jbehave-core.css" );
+</style>
+</head>
+<body>
+ 
+<script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<story path="tests/upload_scenario.story" title="">
+<scenario keyword="Scenario:" title="File upload">
+<examples keyword="Examples:">
+<step>Given the Chosen Website is &lt;URL&gt;</step>
+<step>When the user clicks &lt;elemName&gt;</step>
+<step>When the user waits 1 seconds</step>
+<step>Then the page title should be &lt;someTitle&gt;</step>
+<parameters>
+<names><name>URL</name><name>elemName</name><name>someTitle</name></names>
+<values><value>http://localhost:8080/goodbuy/file/view</value><value>Upload</value><value>MC437 Grupo 5</value></values>
+<values><value>http://localhost:8080/goodbuy/file/view</value><value>Upload</value><value>MC437 Grupo 5</value></values>
+</parameters>
+
+<example keyword="Example:">{URL=http://localhost:8080/goodbuy/file/view, elemName=Upload, someTitle=MC437 Grupo 5}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/goodbuy/file/view</parameter></step>
+<step outcome="successful">When the user clicks <parameter>Upload</parameter></step>
+<step outcome="successful">When the user waits <parameter>1</parameter> seconds</step>
+<step outcome="successful">Then the page title should be <parameter>MC437 Grupo 5</parameter></step>
+
+<example keyword="Example:">{URL=http://localhost:8080/goodbuy/file/view, elemName=Upload, someTitle=MC437 Grupo 5}</example>
+<step outcome="successful">Given the Chosen Website is <parameter>http://localhost:8080/goodbuy/file/view</parameter></step>
+<step outcome="successful">When the user clicks <parameter>Upload</parameter></step>
+<step outcome="successful">When the user waits <parameter>1</parameter> seconds</step>
+<step outcome="successful">Then the page title should be <parameter>MC437 Grupo 5</parameter></step>
+</examples>
+</scenario>
+</story>
+
+]]></script>
+</body>
+<!--  SyntaxHighlighter resources:  should be included at end of body -->
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shCore.css"/>
+<link rel="stylesheet" type="text/css" href="./style/sh-3.0.83/shThemeRDark.css"/>
+<script language="javascript" src="./js/sh-3.0.83/shCore.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushBash.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushCss.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushDiff.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushGroovy.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJava.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushJScript.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPlain.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushPython.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushRuby.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushScala.js"></script>
+<script language="javascript" src="./js/sh-3.0.83/shBrushXml.js"></script>
+<script language="javascript" src="./js/shBrushBdd.js"></script>
+<script type="text/javascript">
+    SyntaxHighlighter.defaults['gutter'] = false;
+    SyntaxHighlighter.defaults['toolbar'] = false;    
+    SyntaxHighlighter.all();
+</script>
+</html>
