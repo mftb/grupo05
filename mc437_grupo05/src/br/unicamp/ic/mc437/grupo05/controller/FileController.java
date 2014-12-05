@@ -54,7 +54,7 @@ public class FileController {
 
 			if (file == null || !file.getContentType().equals("text/xml")) {
 				result.include("result",
-						new ResponseDTO(Boolean.FALSE.toString(),
+						new FileDTO(Boolean.FALSE.toString(),
 								"Formato de arquivo inválido!"));
 				return;
 			}
@@ -70,10 +70,10 @@ public class FileController {
 
 			xmlFileDao.salva(xmlFile);
 
-			result.include("result", new FileDTO(xmlFile));
+			result.include("result", new FileDTO(xmlFile,"Upload concluído com sucesso!"));
 		} catch (IOException e) {
 			e.printStackTrace();
-			result.include("result", new ResponseDTO(Boolean.FALSE.toString(),
+			result.include("result", new FileDTO(Boolean.FALSE.toString(),
 					"Erro inesperado!"));
 		}
 

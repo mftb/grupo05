@@ -15,13 +15,20 @@ public class FileDTO extends ResponseDTO {
 		this.content = content;
 	}
 
-	public FileDTO(XmlFile xmlFile) {
-		super(Boolean.TRUE.toString(), "");
+	public FileDTO(XmlFile xmlFile, String message) {
+		super(Boolean.TRUE.toString(), message);
 		this.fileName = xmlFile.getName();
 		this.timestamp = xmlFile.getTimestamp();
 		this.content = xmlFile.getContent();
 	}
 
+	public FileDTO(String sucess, String message) {
+			super(sucess, message);
+			this.fileName = "";
+			this.timestamp = "";
+			this.content = "";
+	}
+	
 	public String getFileName() {
 		return fileName;
 	}

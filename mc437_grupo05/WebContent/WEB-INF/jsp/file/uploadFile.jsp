@@ -12,14 +12,18 @@
 			<a href="faq"><li class="menu-item">FAQ</li></a>
 		</ul>
 	</div>
-	<div class="main">
+	<div class="mainuf">
 		<div class="breadcrumb">
 			<a href="view">Home</a> &gt; <a href="upload">Nova submiss&atilde;o</a> &gt;<a href="#">Submiss&atilde;o conclu&iacute;da</a> 
 		</div>
 		<br>
 		<h1 class="pagetitle">Upload de arquivo</h1>
 		<br><br>
-		<h2>O Upload foi conclu&iacute;do com ${result.success}!</h2>
+		<h2>${result.message}</h2>
+		<br><br>
+		${result.fileName}<br><br>
+		${result.timestamp}<br><br>
+		${result.content}<br><br>
 	</div>
 </div>
 

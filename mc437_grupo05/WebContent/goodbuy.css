@@ -119,6 +119,16 @@ ul#menu li.menu-separator {
 	border-radius: 20px;
 }
 
+.mainuf {
+	height: 500px;
+	width: 900px;
+	padding: 30px 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-color: #707070;
+	border-radius: 20px;
+}
+
 .faq{
 	height: 320px;
 	width: 900px;
