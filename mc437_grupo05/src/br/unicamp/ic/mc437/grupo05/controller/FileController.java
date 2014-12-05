@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.commons.io.IOUtils;
 
@@ -108,6 +109,9 @@ public class FileController {
 
 	@Path("/view")
 	public void view() {
+
+		List<Long> allIdList = xmlFileDao.getAllIds();
+		result.include("result", allIdList.toString());
 	}
 
 }
