@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.apache.commons.io.IOUtils;
 
+import br.com.caelum.vraptor.Get;
 import br.com.caelum.vraptor.Path;
 import br.com.caelum.vraptor.Post;
 import br.com.caelum.vraptor.Resource;
@@ -53,9 +54,8 @@ public class FileController {
 		try {
 
 			if (file == null || !file.getContentType().equals("text/xml")) {
-				result.include("result",
-						new FileDTO(Boolean.FALSE.toString(),
-								"Formato de arquivo inválido!"));
+				result.include("result", new FileDTO(Boolean.FALSE.toString(),
+						"Formato de arquivo inválido!"));
 				return;
 			}
 
@@ -68,9 +68,10 @@ public class FileController {
 			Date now = Calendar.getInstance().getTime();
 			xmlFile.setTimestamp(now.toString());
 
-			xmlFileDao.salva(xmlFile);
+			xmlFileDao.saveOrUpdate(xmlFile);
 
-			result.include("result", new FileDTO(xmlFile,"Upload concluído com sucesso!"));
+			result.include("result", new FileDTO(xmlFile,
+					"Upload concluído com sucesso!"));
 		} catch (IOException e) {
 			e.printStackTrace();
 			result.include("result", new FileDTO(Boolean.FALSE.toString(),
@@ -79,17 +80,34 @@ public class FileController {
 
 	}
 
+	@Get
+	@Path("/getFile/{fileId}")
+	public void getFile(String fileId) {
+		try {
+			if (fileId == null || fileId.isEmpty() || !fileId.matches("\\d+")) {
+				result.include(new ResponseDTO(Boolean.FALSE.toString(),
+						"Id inválido!"));
+			}
+
+			Long id = Long.valueOf(fileId);
+			XmlFile file = xmlFileDao.getById(id);
+			if (file != null) {
+				result.include("result", new FileDTO(file, ""));
+			} else {
+				result.include("result",
+						new ResponseDTO(Boolean.FALSE.toString(),
+								"Arquivo não encontrado!"));
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			result.include("result", new ResponseDTO(Boolean.FALSE.toString(),
+					"Erro inesperado!"));
+		}
+	}
+
 	@Path("/view")
 	public void view() {
-		// String user = "TestUser";
-		// FileProcess fileProcess = new FileProcess();
-		// List<TestFile> sharedFilesList =
-		// fileProcess.getFilesSharedWith(user);
-		// List<TestFile> ownedFilesList = fileProcess.getFilesOwnedBy(user);
-
-		// model.addAttribute("username", user);
-		// model.addAttribute("sharedFilesList", sharedFilesList);
-		// model.addAttribute("ownedFilesList", ownedFilesList);
 	}
 
 }
