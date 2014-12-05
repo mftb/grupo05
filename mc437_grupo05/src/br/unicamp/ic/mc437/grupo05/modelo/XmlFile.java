@@ -1,5 +1,6 @@
 package br.unicamp.ic.mc437.grupo05.modelo;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
@@ -12,12 +13,14 @@ public class XmlFile {
 	@Id
 	@GeneratedValue
 	private Long id;
-	
+
 	@NotNull(message = "O campo <b>nome</b> precisa ser preenchido!")
 	private String name;
-	
+
+	@Column(length = 32768)
 	private String content;
-	private String path;
+	
+	private String timestamp;
 
 	public Long getId() {
 		return id;
@@ -43,12 +46,11 @@ public class XmlFile {
 		this.content = content;
 	}
 
-	public String getPath() {
-		return path;
+	public String getTimestamp() {
+		return timestamp;
 	}
 
-	public void setPath(String path) {
-		this.path = path;
+	public void setTimestamp(String timestamp) {
+		this.timestamp = timestamp;
 	}
-
 }

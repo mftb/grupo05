@@ -19,7 +19,7 @@
 		<br>
 		<h1 class="pagetitle">Upload de arquivo</h1>
 		<br><br>
-		<h2>O Upload foi conclu&iacute;do com sucesso!</h2>
+		<h2>O Upload foi conclu&iacute;do com ${result.success}!</h2>
 	</div>
 </div>
 
