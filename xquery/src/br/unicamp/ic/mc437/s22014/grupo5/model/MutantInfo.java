@@ -1,7 +1,34 @@
 package br.unicamp.ic.mc437.s22014.grupo5.model;
 
+import java.util.List;
+
 public class MutantInfo {
-	private String isDead;
+
+	//private List<MutantInfo> testCaseResults;
+	
+	/**
+	 * ID
+	 */
+	private String testId;
+	/**
+	 * Cod
+	 */
+	private String testCode;
+	/**
+	 * Nome do caso de teste
+	 */
+	private String testCaseName;
+	/**
+	 * #OPERADOR DE MUTACAO - ainda precisamos tratar essa string apos reaver esse campo
+	 */
+	private String mutationOperators;
+	/**
+	 * Vivo?
+	 */
+	private String isAlive;
+	/**
+	 * Falha
+	 */
 	private String hasFailed;
 	
 	
@@ -10,20 +37,72 @@ public class MutantInfo {
 	 */
 	@Override
 	public String toString() {
-		return "MutantInfo [isDead=" + isDead + ", hasFailed=" + hasFailed
-				+ "]";
+		return "Whiskas [testId=" + testId + ", testCode=" + testCode
+				+ ", testCaseName=" + testCaseName + ", mutationOperators="
+				+ mutationOperators + ", isAlive=" + isAlive + ", hasFailed="
+				+ hasFailed + "]";
+	}
+	
+	
+	/**
+	 * @return the testId
+	 */
+	public String getTestId() {
+		return testId;
 	}
 	/**
-	 * @return the isDead
+	 * @param testId the testId to set
 	 */
-	public String getIsDead() {
-		return isDead;
+	public void setTestId(String testId) {
+		this.testId = testId;
 	}
 	/**
-	 * @param isDead the isDead to set
+	 * @return the testCode
 	 */
-	public void setIsDead(String isDead) {
-		this.isDead = isDead;
+	public String getTestCode() {
+		return testCode;
+	}
+	/**
+	 * @param testCode the testCode to set
+	 */
+	public void setTestCode(String testCode) {
+		this.testCode = testCode;
+	}
+	/**
+	 * @return the testCaseName
+	 */
+	public String getTestCaseName() {
+		return testCaseName;
+	}
+	/**
+	 * @param testCaseName the testCaseName to set
+	 */
+	public void setTestCaseName(String testCaseName) {
+		this.testCaseName = testCaseName;
+	}
+	/**
+	 * @return the mutationOperators
+	 */
+	public String getMutationOperators() {
+		return mutationOperators;
+	}
+	/**
+	 * @param mutationOperators the mutationOperators to set
+	 */
+	public void setMutationOperators(String mutationOperators) {
+		this.mutationOperators = mutationOperators;
+	}
+	/**
+	 * @return the isAlive
+	 */
+	public String getIsAlive() {
+		return isAlive;
+	}
+	/**
+	 * @param isAlive the isAlive to set
+	 */
+	public void setIsAlive(String isAlive) {
+		this.isAlive = isAlive;
 	}
 	/**
 	 * @return the hasFailed
@@ -37,6 +116,7 @@ public class MutantInfo {
 	public void setHasFailed(String hasFailed) {
 		this.hasFailed = hasFailed;
 	}
+
 	
 	
 }

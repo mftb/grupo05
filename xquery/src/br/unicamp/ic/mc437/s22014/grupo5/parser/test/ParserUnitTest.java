@@ -17,5 +17,9 @@ public class ParserUnitTest {
 		for(MutantInfo i : values){
 			System.out.println(i.toString());
 		}
+		System.out.println(values.size());
 	}
+
 }
+
+

@@ -1,13 +1,10 @@
 package br.unicamp.ic.mc437.s22014.grupo5.parser;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 import br.unicamp.ic.mc437.s22014.grupo5.model.MutantInfo;
-import br.unicamp.ic.mc437.s22014.grupo5.model.TestResult;
 
 import com.northconcepts.datapipeline.core.DataReader;
 import com.northconcepts.datapipeline.core.Record;
@@ -20,19 +17,19 @@ public class Parser {
 	/**
 	 * ID
 	 */
-	private final String testId = "iTestResult/_imutants/@path";
+	private final String testId = "iTestResult/testSetResults/path/text()";
 	/**
 	 * Cod
 	 */
-	private final String testCod = "iTestResult/testSetResults/@cod";
+	private final String testCode = "iTestResult/testSetResults/cod/text()";
 	/**
 	 * Nome do caso de teste
 	 */
-	private final String testCaseName = "iTestResult/testSetResults/testCaseResults/@path";
+	private final String testCaseName = "iTestResult/testSetResults/testCaseResults/path/text()";
 	/**
 	 * #OPERADOR DE MUTACAO - ainda precisamos tratar essa string apos reaver esse campo
 	 */
-	private final String mutationOperators = "iTestResult/testSetResults/testCaseResults/testCaseExecutingOutput_MutantList/@mutantKey";
+	private final String mutationOperators = "iTestResult/testSetResults/testCaseResults/testCaseExecutingOutput_MutantList/mutantKey/text()";
 	/**
 	 * Vivo?
 	 */
@@ -49,10 +46,8 @@ public class Parser {
 	 */
 	private final String basePath;
 	
-	/**
-	 * DataReader instance that parses XML, so we can extract desired fields.
-	 */
-	private DataReader dataReader;
+	private final String fileName;
+
 
 	/**
 	 * Constructor
@@ -60,54 +55,98 @@ public class Parser {
 	 * @param fileName - without .xml termination
 	 */
 	public Parser(String basePath, String fileName){
-		this.basePath = basePath;
-        this.dataReader = new XmlReader(new File(basePath + File.separator + fileName + ".xml"))
-        .addField("hasFailed", this.hasFailed)
-        .addField("isDead", this.isAlive)
-        .addRecordBreak("iTestResult/testSetResults/testCaseResults/testCaseExecutingOutput_MutantList");
+		this.basePath = basePath; 
+		this.fileName = fileName;
 	}
 	
-	/**
-	 * Reads the value from a xml field with XPAth = fieldPath 
-	 * @param fieldPath
-	 * @return String
-	 */
-	private List<MutantInfo> getField(String fieldPath){
-		List<MutantInfo> fields = new ArrayList<MutantInfo>();
-		this.dataReader.open();
-		Record record;
-        while ((record = dataReader.read()) != null) {
-        	MutantInfo mutantInfo = new MutantInfo();
-            mutantInfo.setHasFailed(record.getField("hasFailed").getValueAsString());
-            mutantInfo.setIsDead(record.getField("isDead").getValueAsString());
-            fields.add(mutantInfo);
-        }
-		return fields;
-	}
 	
 	public List<MutantInfo> parseIntoMutantInfoObjects(){
-		return this.getField("");
+		List<MutantInfo> outerFields = this.getOuterFields();
+		List<MutantInfo> middleFields = this.getMiddleFields();
+		List<MutantInfo> innerFields = this.getInnerFields();
+		
+		int outerSize = outerFields.size();
+		int middleSize = middleFields.size();
+		int innerSize = innerFields.size();
+       
+		for(int i=0; i<innerSize; i++){
+			innerFields.get(i).setTestCaseName(middleFields.get(i/(innerSize/middleSize)).getTestCaseName());
+			innerFields.get(i).setTestCode(outerFields.get(i/(innerSize/outerSize)).getTestCode());
+			innerFields.get(i).setTestId(outerFields.get(i/(innerSize/outerSize)).getTestId());	
+		}
+		return innerFields;
 	}
-//	public TestResult parseIntoTestFileObject(){
-//		TestResult testResult = new TestResult();
-//		testResult.setTestSet(getField(this.testId));
-//		testResult.setTestCase(getField(this.testCaseName));
-//		testResult.setDataTestCount(-1);
-//		testResult.setMutationOperator(getField(this.mutationOperators));
-//		testResult.setMutant(getField("??"));
-//		testResult.setAlive(-1);
-//		return testResult;
-//	}
+
+	private List<MutantInfo> getInnerFields(){
+		DataReader dataReader = new XmlReader(new File(basePath + File.separator + fileName + ".xml"))
+        .addField("hasFailed", this.hasFailed)
+        .addField("isDead", this.isAlive)
+        .addField("mutationOperators", mutationOperators)
+        .addRecordBreak("iTestResult/testSetResults/testCaseResults/testCaseExecutingOutput_MutantList");		
+
+		List<MutantInfo> fields1 = new ArrayList<MutantInfo>();
+
+		dataReader.open();
+		
+		Record record1;
+		
+		while ((record1 = dataReader.read()) != null) {
+        	MutantInfo mutantInfo = new MutantInfo();
+            mutantInfo.setHasFailed(record1.getField("hasFailed").getValueAsString());
+            mutantInfo.setIsAlive(record1.getField("isDead").getValueAsString());
+            mutantInfo.setMutationOperators(record1.getField("mutationOperators").getValueAsString());
+            fields1.add(mutantInfo);
+        }
+
+		dataReader.close();
+
+		return fields1;
+		
+	}
 	
-//	private void parseXmlFields(){
-//		 DataReader reader1 = new XmlReader(new File("resources/xml/persons.xml"))
-//         .addField("uri", "/Persons/Person/@uri")
-//         .addField("name", "/Persons/Person/@name")
-//         .addField("hometown", "/Persons/Person/@hometown")
-//         .addRecordBreak("/Persons/Person");
-//         .addField("uri", "/Persons/Person/@uri")
-//         .addField("name", "/Persons/Person/@name")
-//         .addField("hometown", "/Persons/Person/@hometown")
-//         .addRecordBreak("/Persons/Person");
-//	}
+	private List<MutantInfo> getMiddleFields(){
+
+		DataReader dataReader = new XmlReader(new File(basePath + File.separator + fileName + ".xml"))
+			.addField("testCaseName", testCaseName)
+			.addRecordBreak("iTestResult/testSetResults/testCaseResults");
+		
+		List<MutantInfo> fields1 = new ArrayList<MutantInfo>();
+
+		
+		dataReader.open();
+		
+		Record record1; //= dataReader.read();
+		
+		 while ((record1 = dataReader.read()) != null) {
+        	MutantInfo mutantInfo = new MutantInfo();
+            mutantInfo.setTestCaseName(record1.getField("testCaseName").getValueAsString());
+            fields1.add(mutantInfo);
+        }
+		dataReader.close();
+
+		return fields1;
+	}
+	
+	private List<MutantInfo> getOuterFields(){
+
+		DataReader dataReader = new XmlReader(new File(basePath + File.separator + fileName + ".xml"))
+			.addField("testCode", testCode)
+	        .addField("testId", testId)
+	     	.addRecordBreak("iTestResult/testSetResults");
+		
+		List<MutantInfo> fields1 = new ArrayList<MutantInfo>();
+
+		dataReader.open();
+		
+		Record record1;
+		
+		 while ((record1 = dataReader.read()) != null) {
+        	MutantInfo mutantInfo = new MutantInfo();
+            mutantInfo.setTestId(record1.getField("testId").getValueAsString());
+            mutantInfo.setTestCode(record1.getField("testCode").getValueAsString());
+            fields1.add(mutantInfo);
+        }
+		dataReader.close();
+		return fields1;
+	}
 }
