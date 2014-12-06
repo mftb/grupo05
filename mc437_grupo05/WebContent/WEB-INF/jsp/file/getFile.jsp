@@ -15,8 +15,8 @@
 	<div class="main">
 		<h1>${result.fileName }</h1>
 		<h2>${result.timestamp }</h2>
-		${result.content }
-		
+		<br><br>
+		<pre><c:out value="${result.content}" /></pre>
 	</div>
 </div>
 
