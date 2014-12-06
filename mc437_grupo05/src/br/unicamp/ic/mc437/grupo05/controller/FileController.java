@@ -42,6 +42,13 @@ public class FileController {
 
 	@Path("/list")
 	public void list() {
+		String links = "";
+		int i = 0;
+		List<Long> allIdList = xmlFileDao.getAllIds();
+		for(Long id:allIdList) {
+			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++ +"</a><br>";
+		}
+		result.include("result", links);
 	}
 
 	@Path("/upload")
@@ -109,9 +116,13 @@ public class FileController {
 
 	@Path("/view")
 	public void view() {
-
+		String links = "";
+		int i = 0;
 		List<Long> allIdList = xmlFileDao.getAllIds();
-		result.include("result", allIdList.toString());
+		for(Long id:allIdList) {
+			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++ +"</a><br>";
+		}
+		result.include("result", links);
 	}
 
 }

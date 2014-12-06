@@ -11,7 +11,7 @@
 		<a href="faq"><li class="menu-item">FAQ</li></a>
 	</ul>
 </div>
-<div class="main">
+<div class="mainview">
 	<div class="breadcrumb">
 		<a href="view">Home</a> &gt; <a href="list">Minhas
 			submiss&otilde;es</a>
@@ -19,48 +19,6 @@
 	<br>
 	<h1 class="pagetitle">Seus arquivos</h1>
 	<div id="files-owned-list">
-		<table>
-			<thead>
-				<tr>
-					<th>Arquivo &nbsp;</th>
-					<th>Adicionado em&nbsp;</th>
-					<th>Ações&nbsp;</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach var="ownedFile" items="${ownedFilesList}">
-					<tr>
-						<td>${ownedFile.name}&nbsp;</td>
-						<td>${ownedFile.addTs}&nbsp;</td>
-						<td><a href="../test/results">Visualizar&nbsp;</a><a href="">Compartilhar&nbsp;</a></td>
-					</tr>
-				</c:forEach>
-			</tbody>
-		</table>
-	</div>
-</div>
-<div class="main">
-	<h1 class="pagetitle">Arquivos compartilhados com você</h1>
-	<div id="files-shared-list">
-		<table>
-			<thead>
-				<tr>
-					<th>Arquivo&nbsp;</th>
-					<th>Adicionado por&nbsp;</th>
-					<th>Adicionado em&nbsp;</th>
-					<th>Ações&nbsp;</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach var="sharedFile" items="${sharedFilesList}">
-					<tr>
-						<td>${sharedFile.name}&nbsp;</td>
-						<td>${sharedFile.owner}&nbsp;</td>
-						<td>${sharedFiles.addTs}&nbsp;</td>
-						<td><a href="../test/results"> Visualizar&nbsp;</a></td>
-					</tr>
-				</c:forEach>
-			</tbody>
-		</table>
+		${result}
 	</div>
 </div>
