@@ -5,7 +5,6 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-import org.hibernate.criterion.Projection;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
@@ -21,10 +20,11 @@ public class XmlFileDao {
 		this.session = session;
 	}
 
-	public void saveOrUpdate(XmlFile xmlFile) {
+	public Long saveOrUpdate(XmlFile xmlFile) {
 		Transaction transaction = session.beginTransaction();
-		session.save(xmlFile);
+		Long id = (Long) session.save(xmlFile);
 		transaction.commit();
+		return id;
 	}
 
 	public XmlFile getById(Long id) {

@@ -45,8 +45,9 @@ public class FileController {
 		String links = "";
 		int i = 0;
 		List<Long> allIdList = xmlFileDao.getAllIds();
-		for(Long id:allIdList) {
-			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++ +"</a><br>";
+		for (Long id : allIdList) {
+			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++
+					+ "</a><br>";
 		}
 		result.include("result", links);
 	}
@@ -76,10 +77,11 @@ public class FileController {
 			Date now = Calendar.getInstance().getTime();
 			xmlFile.setTimestamp(now.toString());
 
-			xmlFileDao.saveOrUpdate(xmlFile);
+			Long id = xmlFileDao.saveOrUpdate(xmlFile);
 
 			result.include("result", new FileDTO(xmlFile,
-					"Upload concluído com sucesso!"));
+					"Upload concluído com sucesso! <br><br>" + "<a href=\"getFile/" + id
+							+ "\">Clique aqui para ver" + "</a><br>"));
 		} catch (IOException e) {
 			e.printStackTrace();
 			result.include("result", new FileDTO(Boolean.FALSE.toString(),
@@ -119,8 +121,9 @@ public class FileController {
 		String links = "";
 		int i = 0;
 		List<Long> allIdList = xmlFileDao.getAllIds();
-		for(Long id:allIdList) {
-			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++ +"</a><br>";
+		for (Long id : allIdList) {
+			links = links + "<a href=\"getFile/" + id + "\">Teste " + i++
+					+ "</a><br>";
 		}
 		result.include("result", links);
 	}

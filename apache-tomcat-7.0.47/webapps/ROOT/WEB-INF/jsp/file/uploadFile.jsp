@@ -21,9 +21,6 @@
 		<br><br>
 		<h2>${result.message}</h2>
 		<br><br>
-		${result.fileName}<br><br>
-		${result.timestamp}<br><br>
-		${result.content}<br><br>
 	</div>
 </div>
 
