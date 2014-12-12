@@ -2871,3 +2871,466 @@ log4j:WARN Please initialize the log4j system properly.
 log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 11:18:39,303  INFO [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': replacing [Root bean: class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [br.com.caelum.vraptor.ioc.spring.InjectionBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
 11:18:39,397  INFO [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3ef0642: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,defaultRouter,defaultMethodNotAllowedHandler,defaultDeserializers,defaultInterceptorHandlerFactory,paranamerNameProvider,interceptorListPriorToExecutionExtractor,defaultConverters,defaultAcceptHeaderToFormat,hibernateProxyInitializer,cglibProxifier,pathAnnotationRoutesParser,topologicalSortedInterceptorRegistry,defaultResourceTranslator,noRoutesConfiguration,XStreamConverters.NullConverter,defaultRoutes,javaEvaluator,defaultTypeNameExtractor,objenesisInstanceCreator,encodingHandlerFactory,defaultMultipartConfig,defaultStaticContentHandler,defaultRestDefaults,defaultResourceNotFoundHandler,defaultTypeFinder,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,XStreamXMLSerialization,defaultRestHeadersHandler,jstlLocalization,applicationConfiguration,XStreamJSONPSerialization,defaultResult,iogiParametersProvider,VRaptorDependencyProvider,defaultServletFileUploadCreator,sessionFlashScope,defaultRepresentationResult,forwardToDefaultViewInterceptor,commonsUploadMultipartInterceptor,defaultFormatResolver,HTMLSerialization,jsonDeserializer,defaultValidationViewsFactory,defaultRefererResult,instantiateInterceptor,executeMethodInterceptor,VRaptorInstantiator,defaultMethodInfo,XStreamXMLDeserializer,defaultHttpResult,XStreamJSONSerialization,downloadInterceptor,flashInterceptor,outjectResult,hibernateValidator3,parametersInstantiatorInterceptor,defaultPathResolver,resourceLookupInterceptor,defaultExceptionMapper,emptyResult,defaultValidator,defaultLogicResult,deserializingInterceptor,messageConverter,defaultPageResult,defaultStatus,XStreamConverters,replicatorOutjector,VRaptorParameterNamesProvider,exceptionHandlerInterceptor,uploadedFileConverter,integerConverter,enumConverter,shortConverter,localeBasedCalendarConverter,primitiveLongConverter,primitiveByteConverter,primitiveCharConverter,primitiveBooleanConverter,primitiveShortConverter,primitiveFloatConverter,doubleConverter,primitiveIntConverter,longConverter,localeBasedDateConverter,booleanConverter,bigDecimalConverter,stringConverter,bigIntegerConverter,primitiveDoubleConverter,characterConverter,byteConverter,floatConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,enhancedRequestExecution,defaultInterceptorStack,XStreamBuilderImpl,org.springframework.aop.config.internalAutoProxyCreator,testResultController,indexController,criadorDeSessao,xmlFileDao,criadorDeSessionFactory,fileController]; root of factory hierarchy
+Dez 12, 2014 11:36:11 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAÇÕES: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dez 12, 2014 11:36:12 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:36:12 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:36:12 AM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 592 ms
+Dez 12, 2014 11:36:12 AM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+Dez 12, 2014 11:36:12 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.47
+Dez 12, 2014 11:36:12 AM org.apache.catalina.startup.HostConfig deployWAR
+INFORMAÇÕES: Deploying web application archive /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/ROOT_IC.war
+11:36:14,807  INFO [BasicConfiguration  ] Using class br.com.caelum.vraptor.ioc.spring.SpringProvider as Container Provider
+11:36:14,817  INFO [DefaultSpringLocator] No application context found
+11:36:14,856  INFO [BasicConfiguration  ] br.com.caelum.vraptor.scanning = null
+11:36:14,856  INFO [WebAppBootstrapFactory] Dynamic WebAppBootstrap found.
+11:36:14,975  INFO [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Fri Dec 12 11:36:14 BRST 2014]; root of context hierarchy
+11:36:15,041  INFO [ClassPathBeanDefinitionScanner] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+log4j:WARN No appenders could be found for logger (org.hibernate.validator.Version).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+11:36:15,211  INFO [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': replacing [Root bean: class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [br.com.caelum.vraptor.ioc.spring.InjectionBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+11:36:15,313  INFO [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@9a0476f: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,javaEvaluator,defaultRouter,defaultRoutes,defaultAcceptHeaderToFormat,encodingHandlerFactory,defaultRestDefaults,cglibProxifier,defaultMethodNotAllowedHandler,topologicalSortedInterceptorRegistry,defaultResourceNotFoundHandler,hibernateProxyInitializer,defaultTypeFinder,paranamerNameProvider,defaultMultipartConfig,pathAnnotationRoutesParser,defaultConverters,defaultResourceTranslator,defaultTypeNameExtractor,XStreamConverters.NullConverter,interceptorListPriorToExecutionExtractor,defaultDeserializers,defaultStaticContentHandler,objenesisInstanceCreator,noRoutesConfiguration,defaultInterceptorHandlerFactory,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,defaultPageResult,exceptionHandlerInterceptor,messageConverter,flashInterceptor,XStreamXMLSerialization,forwardToDefaultViewInterceptor,outjectResult,XStreamXMLDeserializer,jstlLocalization,defaultValidationViewsFactory,defaultStatus,instantiateInterceptor,defaultServletFileUploadCreator,defaultValidator,VRaptorDependencyProvider,XStreamConverters,applicationConfiguration,defaultRestHeadersHandler,defaultLogicResult,emptyResult,hibernateValidator3,XStreamJSONSerialization,sessionFlashScope,defaultResult,defaultPathResolver,defaultRefererResult,HTMLSerialization,parametersInstantiatorInterceptor,VRaptorInstantiator,defaultFormatResolver,deserializingInterceptor,executeMethodInterceptor,commonsUploadMultipartInterceptor,defaultMethodInfo,resourceLookupInterceptor,defaultHttpResult,defaultExceptionMapper,jsonDeserializer,VRaptorParameterNamesProvider,replicatorOutjector,iogiParametersProvider,XStreamJSONPSerialization,downloadInterceptor,defaultRepresentationResult,primitiveBooleanConverter,bigDecimalConverter,primitiveShortConverter,primitiveFloatConverter,primitiveDoubleConverter,longConverter,localeBasedDateConverter,primitiveIntConverter,characterConverter,stringConverter,primitiveByteConverter,integerConverter,byteConverter,uploadedFileConverter,doubleConverter,shortConverter,primitiveCharConverter,booleanConverter,bigIntegerConverter,localeBasedCalendarConverter,floatConverter,enumConverter,primitiveLongConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,enhancedRequestExecution,XStreamBuilderImpl,defaultInterceptorStack,org.springframework.aop.config.internalAutoProxyCreator,fileController,indexController,criadorDeSessionFactory,testResultController,xmlFileDao,criadorDeSessao]; root of factory hierarchy
+Dez 12, 2014 11:37:30 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAÇÕES: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dez 12, 2014 11:37:30 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:37:30 AM org.apache.coyote.AbstractProtocol init
+GRAVE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Endereço já em uso <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 17 more
+
+Dez 12, 2014 11:37:30 AM org.apache.catalina.core.StandardService initInternal
+GRAVE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Endereço já em uso <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 17 more
+
+Dez 12, 2014 11:37:30 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:37:30 AM org.apache.coyote.AbstractProtocol init
+GRAVE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Endereço já em uso <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 16 more
+
+Dez 12, 2014 11:37:30 AM org.apache.catalina.core.StandardService initInternal
+GRAVE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Endereço já em uso <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 16 more
+
+Dez 12, 2014 11:37:30 AM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 637 ms
+Dez 12, 2014 11:37:31 AM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+Dez 12, 2014 11:37:31 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.47
+Dez 12, 2014 11:37:31 AM org.apache.catalina.startup.HostConfig deployWAR
+INFORMAÇÕES: Deploying web application archive /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/backup_ic.war
+11:37:33,642  INFO [BasicConfiguration  ] Using class br.com.caelum.vraptor.ioc.spring.SpringProvider as Container Provider
+11:37:33,652  INFO [DefaultSpringLocator] No application context found
+11:37:33,706  INFO [BasicConfiguration  ] br.com.caelum.vraptor.scanning = null
+11:37:33,706  INFO [WebAppBootstrapFactory] Dynamic WebAppBootstrap found.
+11:37:33,851  INFO [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Fri Dec 12 11:37:33 BRST 2014]; root of context hierarchy
+11:37:33,922  INFO [ClassPathBeanDefinitionScanner] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+log4j:WARN No appenders could be found for logger (org.hibernate.validator.Version).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+11:37:34,114  INFO [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': replacing [Root bean: class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [br.com.caelum.vraptor.ioc.spring.InjectionBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+11:37:34,236  INFO [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@7d8d75f3: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,defaultStaticContentHandler,defaultRoutes,defaultMethodNotAllowedHandler,hibernateProxyInitializer,defaultInterceptorHandlerFactory,defaultResourceTranslator,defaultRouter,objenesisInstanceCreator,defaultAcceptHeaderToFormat,noRoutesConfiguration,encodingHandlerFactory,pathAnnotationRoutesParser,defaultTypeFinder,defaultMultipartConfig,paranamerNameProvider,interceptorListPriorToExecutionExtractor,defaultResourceNotFoundHandler,javaEvaluator,defaultTypeNameExtractor,topologicalSortedInterceptorRegistry,cglibProxifier,defaultDeserializers,XStreamConverters.NullConverter,defaultRestDefaults,defaultConverters,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,XStreamConverters,downloadInterceptor,VRaptorParameterNamesProvider,defaultPageResult,defaultPathResolver,defaultRepresentationResult,iogiParametersProvider,VRaptorDependencyProvider,exceptionHandlerInterceptor,replicatorOutjector,commonsUploadMultipartInterceptor,outjectResult,VRaptorInstantiator,hibernateValidator3,defaultRefererResult,defaultHttpResult,sessionFlashScope,applicationConfiguration,HTMLSerialization,XStreamJSONSerialization,defaultValidationViewsFactory,emptyResult,defaultFormatResolver,flashInterceptor,parametersInstantiatorInterceptor,defaultValidator,messageConverter,deserializingInterceptor,defaultServletFileUploadCreator,defaultStatus,instantiateInterceptor,resourceLookupInterceptor,defaultRestHeadersHandler,defaultExceptionMapper,jstlLocalization,defaultLogicResult,XStreamXMLDeserializer,defaultResult,defaultMethodInfo,forwardToDefaultViewInterceptor,executeMethodInterceptor,jsonDeserializer,XStreamJSONPSerialization,XStreamXMLSerialization,primitiveShortConverter,booleanConverter,primitiveLongConverter,primitiveCharConverter,primitiveDoubleConverter,primitiveFloatConverter,localeBasedCalendarConverter,primitiveBooleanConverter,bigDecimalConverter,characterConverter,primitiveIntConverter,floatConverter,stringConverter,longConverter,bigIntegerConverter,shortConverter,localeBasedDateConverter,byteConverter,integerConverter,enumConverter,primitiveByteConverter,uploadedFileConverter,doubleConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,defaultInterceptorStack,XStreamBuilderImpl,enhancedRequestExecution,org.springframework.aop.config.internalAutoProxyCreator,testResultController,fileController,criadorDeSessionFactory,xmlFileDao,criadorDeSessao,indexController]; root of factory hierarchy
+Dez 12, 2014 11:38:24 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAÇÕES: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dez 12, 2014 11:38:24 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:38:24 AM org.apache.coyote.AbstractProtocol init
+GRAVE: Failed to initialize end point associated with ProtocolHandler ["http-bio-8080"]
+java.net.BindException: Endereço já em uso <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 17 more
+
+Dez 12, 2014 11:38:24 AM org.apache.catalina.core.StandardService initInternal
+GRAVE: Failed to initialize connector [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8080]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Endereço já em uso <null>:8080
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 17 more
+
+Dez 12, 2014 11:38:24 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:38:24 AM org.apache.coyote.AbstractProtocol init
+GRAVE: Failed to initialize end point associated with ProtocolHandler ["ajp-bio-8009"]
+java.net.BindException: Endereço já em uso <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 16 more
+
+Dez 12, 2014 11:38:24 AM org.apache.catalina.core.StandardService initInternal
+GRAVE: Failed to initialize connector [Connector[AJP/1.3-8009]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[AJP/1.3-8009]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:814)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:640)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:665)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:281)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:455)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:983)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Endereço já em uso <null>:8009
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:407)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:623)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:981)
+	... 13 more
+Caused by: java.net.BindException: Endereço já em uso
+	at java.net.PlainSocketImpl.socketBind(Native Method)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376)
+	at java.net.ServerSocket.bind(ServerSocket.java:376)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:394)
+	... 16 more
+
+Dez 12, 2014 11:38:24 AM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 612 ms
+Dez 12, 2014 11:38:24 AM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+Dez 12, 2014 11:38:25 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.47
+Dez 12, 2014 11:38:25 AM org.apache.catalina.startup.HostConfig deployWAR
+INFORMAÇÕES: Deploying web application archive /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/ROOT.war
+11:38:27,572  INFO [BasicConfiguration  ] Using class br.com.caelum.vraptor.ioc.spring.SpringProvider as Container Provider
+11:38:27,588  INFO [DefaultSpringLocator] No application context found
+11:38:27,634  INFO [BasicConfiguration  ] br.com.caelum.vraptor.scanning = null
+11:38:27,635  INFO [WebAppBootstrapFactory] Dynamic WebAppBootstrap found.
+11:38:27,753  INFO [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Fri Dec 12 11:38:27 BRST 2014]; root of context hierarchy
+11:38:27,811  INFO [ClassPathBeanDefinitionScanner] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+log4j:WARN No appenders could be found for logger (org.hibernate.validator.Version).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+11:38:27,975  INFO [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': replacing [Root bean: class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [br.com.caelum.vraptor.ioc.spring.InjectionBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+11:38:28,066  INFO [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1847b5e2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,defaultInterceptorHandlerFactory,objenesisInstanceCreator,paranamerNameProvider,defaultTypeFinder,interceptorListPriorToExecutionExtractor,defaultRoutes,XStreamConverters.NullConverter,hibernateProxyInitializer,pathAnnotationRoutesParser,defaultTypeNameExtractor,javaEvaluator,defaultConverters,defaultRestDefaults,defaultMethodNotAllowedHandler,defaultResourceTranslator,topologicalSortedInterceptorRegistry,defaultDeserializers,defaultMultipartConfig,defaultRouter,defaultAcceptHeaderToFormat,defaultStaticContentHandler,noRoutesConfiguration,defaultResourceNotFoundHandler,encodingHandlerFactory,cglibProxifier,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,instantiateInterceptor,defaultResult,defaultPageResult,HTMLSerialization,defaultExceptionMapper,jsonDeserializer,emptyResult,parametersInstantiatorInterceptor,defaultStatus,replicatorOutjector,commonsUploadMultipartInterceptor,XStreamJSONSerialization,defaultHttpResult,XStreamConverters,flashInterceptor,messageConverter,hibernateValidator3,defaultPathResolver,XStreamXMLDeserializer,defaultValidationViewsFactory,sessionFlashScope,XStreamXMLSerialization,downloadInterceptor,VRaptorParameterNamesProvider,VRaptorInstantiator,defaultRepresentationResult,defaultFormatResolver,XStreamJSONPSerialization,outjectResult,deserializingInterceptor,defaultServletFileUploadCreator,defaultRestHeadersHandler,forwardToDefaultViewInterceptor,exceptionHandlerInterceptor,VRaptorDependencyProvider,executeMethodInterceptor,defaultMethodInfo,defaultLogicResult,jstlLocalization,resourceLookupInterceptor,defaultRefererResult,applicationConfiguration,iogiParametersProvider,defaultValidator,characterConverter,bigIntegerConverter,localeBasedDateConverter,booleanConverter,primitiveBooleanConverter,localeBasedCalendarConverter,bigDecimalConverter,uploadedFileConverter,doubleConverter,floatConverter,longConverter,byteConverter,shortConverter,primitiveIntConverter,primitiveDoubleConverter,integerConverter,primitiveLongConverter,enumConverter,stringConverter,primitiveFloatConverter,primitiveCharConverter,primitiveShortConverter,primitiveByteConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,defaultInterceptorStack,enhancedRequestExecution,XStreamBuilderImpl,org.springframework.aop.config.internalAutoProxyCreator,indexController,criadorDeSessao,xmlFileDao,testResultController,criadorDeSessionFactory,fileController]; root of factory hierarchy
+11:38:28,874  INFO [DefaultConverters   ] Registering bundled converters
+11:38:28,898  INFO [LinkToHandler       ] Registering linkTo component
+11:38:28,962  INFO [DefaultRouteBuilder ] /                                                 [ALL] -> IndexController.index()
+11:38:28,965  INFO [DefaultRouteBuilder ] /results                                          [ALL] -> TestResultController.results(Model)
+11:38:28,980  INFO [DefaultRouteBuilder ] /file/uploadFile                                  [POST] -> FileController.uploadFile(UploadedFile)
+11:38:28,981  INFO [DefaultRouteBuilder ] /file/faq                                         [ALL] -> FileController.faq()
+11:38:28,981  INFO [DefaultRouteBuilder ] /file/view                                        [ALL] -> FileController.view()
+11:38:28,982  INFO [DefaultRouteBuilder ] /file/upload                                      [ALL] -> FileController.upload(String)
+11:38:28,982  INFO [DefaultRouteBuilder ] /file/list                                        [ALL] -> FileController.list()
+11:38:28,985  INFO [DefaultRouteBuilder ] /file/getFile/{fileId}                            [GET] -> FileController.getFile(String)
+11:38:28,992  INFO [VRaptor             ] VRaptor 3.4.1 successfuly initialized
+Dez 12, 2014 11:38:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/host-manager
+Dez 12, 2014 11:38:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/examples
+Dez 12, 2014 11:38:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/manager
+Dez 12, 2014 11:38:29 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/docs
+Dez 12, 2014 11:38:29 AM org.apache.catalina.startup.Catalina start
+INFORMAÇÕES: Server startup in 4376 ms
+Dez 12, 2014 11:39:07 AM org.apache.catalina.core.StandardServer await
+INFORMAÇÕES: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol pause
+INFORMAÇÕES: Pausing ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol pause
+INFORMAÇÕES: Pausing ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:39:07 AM org.apache.catalina.core.StandardService stopInternal
+INFORMAÇÕES: Stopping service Catalina
+11:39:07,259  INFO [AnnotationConfigWebApplicationContext] Closing Root WebApplicationContext: startup date [Fri Dec 12 11:38:27 BRST 2014]; root of context hierarchy
+11:39:07,261  INFO [DefaultListableBeanFactory] Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@1847b5e2: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,defaultInterceptorHandlerFactory,objenesisInstanceCreator,paranamerNameProvider,defaultTypeFinder,interceptorListPriorToExecutionExtractor,defaultRoutes,XStreamConverters.NullConverter,hibernateProxyInitializer,pathAnnotationRoutesParser,defaultTypeNameExtractor,javaEvaluator,defaultConverters,defaultRestDefaults,defaultMethodNotAllowedHandler,defaultResourceTranslator,topologicalSortedInterceptorRegistry,defaultDeserializers,defaultMultipartConfig,defaultRouter,defaultAcceptHeaderToFormat,defaultStaticContentHandler,noRoutesConfiguration,defaultResourceNotFoundHandler,encodingHandlerFactory,cglibProxifier,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,instantiateInterceptor,defaultResult,defaultPageResult,HTMLSerialization,defaultExceptionMapper,jsonDeserializer,emptyResult,parametersInstantiatorInterceptor,defaultStatus,replicatorOutjector,commonsUploadMultipartInterceptor,XStreamJSONSerialization,defaultHttpResult,XStreamConverters,flashInterceptor,messageConverter,hibernateValidator3,defaultPathResolver,XStreamXMLDeserializer,defaultValidationViewsFactory,sessionFlashScope,XStreamXMLSerialization,downloadInterceptor,VRaptorParameterNamesProvider,VRaptorInstantiator,defaultRepresentationResult,defaultFormatResolver,XStreamJSONPSerialization,outjectResult,deserializingInterceptor,defaultServletFileUploadCreator,defaultRestHeadersHandler,forwardToDefaultViewInterceptor,exceptionHandlerInterceptor,VRaptorDependencyProvider,executeMethodInterceptor,defaultMethodInfo,defaultLogicResult,jstlLocalization,resourceLookupInterceptor,defaultRefererResult,applicationConfiguration,iogiParametersProvider,defaultValidator,characterConverter,bigIntegerConverter,localeBasedDateConverter,booleanConverter,primitiveBooleanConverter,localeBasedCalendarConverter,bigDecimalConverter,uploadedFileConverter,doubleConverter,floatConverter,longConverter,byteConverter,shortConverter,primitiveIntConverter,primitiveDoubleConverter,integerConverter,primitiveLongConverter,enumConverter,stringConverter,primitiveFloatConverter,primitiveCharConverter,primitiveShortConverter,primitiveByteConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,defaultInterceptorStack,enhancedRequestExecution,XStreamBuilderImpl,org.springframework.aop.config.internalAutoProxyCreator,indexController,criadorDeSessao,xmlFileDao,testResultController,criadorDeSessionFactory,fileController]; root of factory hierarchy
+Dez 12, 2014 11:39:07 AM org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+GRAVE: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol stop
+INFORMAÇÕES: Stopping ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol destroy
+INFORMAÇÕES: Destroying ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol stop
+INFORMAÇÕES: Stopping ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:39:07 AM org.apache.coyote.AbstractProtocol destroy
+INFORMAÇÕES: Destroying ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:39:38 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAÇÕES: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib
+Dez 12, 2014 11:39:39 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:39:39 AM org.apache.coyote.AbstractProtocol init
+INFORMAÇÕES: Initializing ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:39:39 AM org.apache.catalina.startup.Catalina load
+INFORMAÇÕES: Initialization processed in 593 ms
+Dez 12, 2014 11:39:39 AM org.apache.catalina.core.StandardService startInternal
+INFORMAÇÕES: Starting service Catalina
+Dez 12, 2014 11:39:39 AM org.apache.catalina.core.StandardEngine startInternal
+INFORMAÇÕES: Starting Servlet Engine: Apache Tomcat/7.0.47
+Dez 12, 2014 11:39:39 AM org.apache.catalina.startup.HostConfig deployWAR
+INFORMAÇÕES: Deploying web application archive /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/ROOT.war
+11:39:42,045  INFO [BasicConfiguration  ] Using class br.com.caelum.vraptor.ioc.spring.SpringProvider as Container Provider
+11:39:42,060  INFO [DefaultSpringLocator] No application context found
+11:39:42,139  INFO [BasicConfiguration  ] br.com.caelum.vraptor.scanning = null
+11:39:42,139  INFO [WebAppBootstrapFactory] Dynamic WebAppBootstrap found.
+11:39:42,305  INFO [AnnotationConfigWebApplicationContext] Refreshing Root WebApplicationContext: startup date [Fri Dec 12 11:39:42 BRST 2014]; root of context hierarchy
+11:39:42,387  INFO [ClassPathBeanDefinitionScanner] JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+log4j:WARN No appenders could be found for logger (org.hibernate.validator.Version).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+11:39:42,524  INFO [DefaultListableBeanFactory] Overriding bean definition for bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': replacing [Root bean: class [org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] with [Root bean: class [br.com.caelum.vraptor.ioc.spring.InjectionBeanPostProcessor]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null]
+11:39:42,639  INFO [DefaultListableBeanFactory] Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@28d898bd: defining beans [org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,interceptorListPriorToExecutionExtractor,XStreamConverters.NullConverter,javaEvaluator,defaultRestDefaults,defaultAcceptHeaderToFormat,defaultInterceptorHandlerFactory,defaultRouter,objenesisInstanceCreator,defaultMultipartConfig,defaultMethodNotAllowedHandler,defaultTypeFinder,paranamerNameProvider,encodingHandlerFactory,cglibProxifier,hibernateProxyInitializer,defaultStaticContentHandler,defaultConverters,defaultResourceTranslator,topologicalSortedInterceptorRegistry,defaultTypeNameExtractor,pathAnnotationRoutesParser,defaultDeserializers,defaultRoutes,noRoutesConfiguration,defaultResourceNotFoundHandler,stereotypeHandler,converterHandler,interceptorStereotypeHandler,deserializesHandler,stereotypedBeansRegistrar,defaultSpringLocator,defaultExceptionMapper,instantiateInterceptor,defaultStatus,defaultServletFileUploadCreator,defaultRepresentationResult,commonsUploadMultipartInterceptor,HTMLSerialization,hibernateValidator3,jsonDeserializer,defaultHttpResult,deserializingInterceptor,defaultValidationViewsFactory,XStreamJSONPSerialization,executeMethodInterceptor,VRaptorDependencyProvider,emptyResult,VRaptorInstantiator,parametersInstantiatorInterceptor,defaultRestHeadersHandler,defaultPageResult,flashInterceptor,VRaptorParameterNamesProvider,outjectResult,defaultMethodInfo,applicationConfiguration,resourceLookupInterceptor,XStreamXMLSerialization,XStreamXMLDeserializer,defaultRefererResult,forwardToDefaultViewInterceptor,downloadInterceptor,defaultValidator,exceptionHandlerInterceptor,iogiParametersProvider,defaultFormatResolver,defaultLogicResult,defaultPathResolver,replicatorOutjector,defaultResult,messageConverter,XStreamJSONSerialization,XStreamConverters,sessionFlashScope,jstlLocalization,primitiveLongConverter,primitiveByteConverter,longConverter,doubleConverter,booleanConverter,stringConverter,integerConverter,shortConverter,primitiveFloatConverter,bigDecimalConverter,primitiveBooleanConverter,primitiveIntConverter,floatConverter,characterConverter,enumConverter,primitiveShortConverter,localeBasedDateConverter,byteConverter,primitiveDoubleConverter,uploadedFileConverter,localeBasedCalendarConverter,primitiveCharConverter,bigIntegerConverter,VRaptorRequestProvider,httpServletRequestProvider,httpServletResponseProvider,httpSessionProvider,enhancedRequestExecution,XStreamBuilderImpl,defaultInterceptorStack,org.springframework.aop.config.internalAutoProxyCreator,fileController,testResultController,xmlFileDao,indexController,criadorDeSessionFactory,criadorDeSessao]; root of factory hierarchy
+11:39:43,765  INFO [DefaultConverters   ] Registering bundled converters
+11:39:43,798  INFO [LinkToHandler       ] Registering linkTo component
+11:39:43,902  INFO [DefaultRouteBuilder ] /file/uploadFile                                  [POST] -> FileController.uploadFile(UploadedFile)
+11:39:43,902  INFO [DefaultRouteBuilder ] /file/faq                                         [ALL] -> FileController.faq()
+11:39:43,903  INFO [DefaultRouteBuilder ] /file/list                                        [ALL] -> FileController.list()
+11:39:43,905  INFO [DefaultRouteBuilder ] /file/getFile/{fileId}                            [GET] -> FileController.getFile(String)
+11:39:43,906  INFO [DefaultRouteBuilder ] /file/view                                        [ALL] -> FileController.view()
+11:39:43,907  INFO [DefaultRouteBuilder ] /file/upload                                      [ALL] -> FileController.upload(String)
+11:39:43,909  INFO [DefaultRouteBuilder ] /results                                          [ALL] -> TestResultController.results(Model)
+11:39:43,910  INFO [DefaultRouteBuilder ] /                                                 [ALL] -> IndexController.index()
+11:39:43,917  INFO [VRaptor             ] VRaptor 3.4.1 successfuly initialized
+Dez 12, 2014 11:39:43 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/host-manager
+Dez 12, 2014 11:39:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/examples
+Dez 12, 2014 11:39:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/manager
+Dez 12, 2014 11:39:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAÇÕES: Deploying web application directory /home/douglas/workspace/grupo05/apache-tomcat-7.0.47/webapps/docs
+Dez 12, 2014 11:39:44 AM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["http-bio-8080"]
+Dez 12, 2014 11:39:44 AM org.apache.coyote.AbstractProtocol start
+INFORMAÇÕES: Starting ProtocolHandler ["ajp-bio-8009"]
+Dez 12, 2014 11:39:44 AM org.apache.catalina.startup.Catalina start
+INFORMAÇÕES: Server startup in 5182 ms
+Hibernate: 
+    select
+        this_.id as y0_ 
+    from
+        XmlFile this_
+Dez 12, 2014 11:39:45 AM org.apache.jasper.compiler.TldLocationsCache tldScanJar
+INFORMAÇÕES: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+Hibernate: 
+    select
+        this_.id as y0_ 
+    from
+        XmlFile this_
+11:39:52,861  INFO [CommonsUploadMultipartInterceptor] Request contains multipart data. Try to parse with commons-upload.
+11:39:52,894  WARN [UploadedFileConverter] There was an error when uploading the file {}. Please verify if commons-fileupload jars are in your classpath or you are using a Servlet 3 Container.
+Hibernate: 
+    select
+        this_.id as y0_ 
+    from
+        XmlFile this_
+Hibernate: 
+    select
+        this_.id as id0_0_,
+        this_.content as content0_0_,
+        this_.name as name0_0_,
+        this_.timestamp as timestamp0_0_ 
+    from
+        XmlFile this_ 
+    where
+        this_.id=?
