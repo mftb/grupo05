@@ -18,13 +18,13 @@
 		</div>
 		<br>
 		<h1 class="pagetitle">Upload de arquivo</h1>
-		<br>
 		<form action="uploadFile" method="post" enctype="multipart/form-data">
 			Endere&ccedil;o: <input type="file" name="file"
-				style="display: inline-block;"><br> <br> 
-				<input
+				style="display: inline-block;"><br> <br> <input
 				type="submit" value="Submeter">
 		</form>
+		<br>
+		<h3>${result.message}</h3>
 	</div>
 </div>
 

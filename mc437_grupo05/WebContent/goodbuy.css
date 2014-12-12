@@ -110,7 +110,6 @@ ul#menu li.menu-separator {
 
 /* ----- Main Common ----- */
 .main {
-	height: 100%;
 	width: 900px;
 	padding: 30px 30px;
 	margin-top: 10px;
@@ -120,7 +119,6 @@ ul#menu li.menu-separator {
 }
 
 .mainuf {
-	height: 500px;
 	width: 900px;
 	padding: 30px 30px;
 	margin-top: 10px;
@@ -130,7 +128,6 @@ ul#menu li.menu-separator {
 }
 
 .mainview {
-	height: 700px;
 	width: 900px;
 	padding: 30px 30px;
 	margin-top: 10px;
@@ -140,7 +137,6 @@ ul#menu li.menu-separator {
 }
 
 .faq{
-	height: 320px;
 	width: 900px;
 	padding: 30px 30px;
 	margin-top: 10px;

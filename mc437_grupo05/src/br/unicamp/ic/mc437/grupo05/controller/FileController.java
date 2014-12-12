@@ -1,6 +1,5 @@
 package br.unicamp.ic.mc437.grupo05.controller;
 
-import java.io.IOException;
 import java.io.StringWriter;
 import java.util.Calendar;
 import java.util.Date;
@@ -53,12 +52,21 @@ public class FileController {
 	}
 
 	@Path("/upload")
-	public void upload() {
+	public void upload(String message) {
+
+		if (message == null) {
+			message = "";
+		}
+
+		result.include("result", new FileDTO(Boolean.FALSE.toString(), message));
 	}
 
 	@Post
 	@Path("/uploadFile")
 	public void uploadFile(UploadedFile file) {
+
+		validator.onErrorRedirectTo(this.getClass()).upload(
+				"Selecione arquivo válido!");
 
 		try {
 
@@ -80,9 +88,10 @@ public class FileController {
 			Long id = xmlFileDao.saveOrUpdate(xmlFile);
 
 			result.include("result", new FileDTO(xmlFile,
-					"Upload concluído com sucesso! <br><br>" + "<a href=\"getFile/" + id
+					"Upload concluído com sucesso! <br><br>"
+							+ "<a href=\"getFile/" + id
 							+ "\">Clique aqui para ver" + "</a><br>"));
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			result.include("result", new FileDTO(Boolean.FALSE.toString(),
 					"Erro inesperado!"));
