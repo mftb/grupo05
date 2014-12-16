@@ -42,7 +42,7 @@ public class UploadScenarioSteps {
 		}
 		@When("the user clicks <SubmitButton>")
 		public void clickSubm(@Named("SubmitButton") String elemName) {
-			driver.findElement(By.cssSelector(elemName)).click();
+			driver.findElement(By.id(elemName)).click();
 		}
 		
 		@When("the user select field <fieldName> and types <userText>")
@@ -64,6 +64,6 @@ public class UploadScenarioSteps {
 	    }
 	    @Then("the <Message> should be <SuccessText>")
 	    public void checkSuccess(@Named("Message") String MesPos,@Named("SuccessText") String SuccText){
-	    	assertThat(driver.findElement(By.cssSelector(MesPos)).getText(), is(SuccText));
+	    	assertThat(driver.findElement(By.id(MesPos)).getText(), is(SuccText));
 	    }
 }

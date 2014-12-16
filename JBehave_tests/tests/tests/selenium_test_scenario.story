@@ -8,10 +8,10 @@ When the user waits 1 seconds
 Then the page title should be <someTitle>
 
 Examples:
-|URL									|elemName	|someTitle		|
-|http://localhost:8080/goodbuy/file/view|Submissões	|MC437 Grupo 5	|
-|http://localhost:8080/goodbuy/file/view|Home		|MC437 Grupo 5	|
-|http://localhost:8080/goodbuy/file/view|FAQ		|MC437 Grupo 5	|
+|URL										|elemName	|someTitle		|
+|http://143.106.16.17:8081/goodbuy/file/view|Submissões	|MC437 Grupo 5	|
+|http://143.106.16.17:8081/goodbuy/file/view|Home		|MC437 Grupo 5	|
+|http://143.106.16.17:8081/goodbuy/file/view|FAQ		|MC437 Grupo 5	|
 
 
 
