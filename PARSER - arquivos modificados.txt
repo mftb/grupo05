@@ -1,0 +1,40 @@
+ALTERACOES NO PROJETO FRENTE A ULTIMA VERSAO 
+
+IMPORTE O PROJETO DA PASTA app_with_parser: mc437_grupo05 EM UM OUTRO WORKSPACE. NAO ALTEREI NADA NA NOSSA PASTA DO PROJETO.
+
+1. MODEL AND BUSINESS =======================================================================================================
+MutantInfo.java
+Corresponde as informacoes retiradas do XML
+Atributo fileId contem o id auto-generated ao inserir o arquivo no banco (chave estrangeira para a tabela XmlFile)
+Tem alguma anotacao a ser incluida no POJO?
+
+MutantInfoDao.java
+Conferir
+
+MutantInfoDTO.java
+Conferir
+
+Parser.java
+No pacote parser. Adaptado com relacao a versao que tinhamos na pasta xquery, para usar um InputStreamReader ao inves de um File.
+
+2. CONTROLLER ================================================================================================================
+
+FileController
+Checar os metodos
+a.  Lines 100-108 from FileController, on method
+	@Post
+	@Path("/uploadFile")
+	public void uploadFile(UploadedFile file) { ... }
+	
+	where parsing was added 
+b.  @Get
+	@Path("/table/{fileId}")
+	public void getFileTable(String fileId) { ... }
+
+	Novo metodo para recuperar o arquivo com fileId = fileId, ja salvo no banco e exibir as infos na forma de tabela
+
+3. VIEW ======================================================================================================================
+
+table.jsp - NOVA. exibe a tabela com as informacoes extraidas.
+
+
